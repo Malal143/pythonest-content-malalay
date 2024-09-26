@@ -7,19 +7,21 @@
 Conditional statements allow you to execute different blocks of code based on certain conditions. The main types of conditional statements in Python are:
 
 - **`if` Statement**: Executes a block of code if the condition is true.
-  
+
   ```python
   if condition:
     # Code to execute if condition is true
 
+  ```
+
 - **`if-else` Statement**: Executes one block of code if the condition is true, and another block if it is false.
 
-```python
+````python
 if condition:
     # Code to execute if condition is true
     else:
         # Code to execute if condition is false
-        
+
 
 - **`if-elif` Statement**: Allows you to check multiple conditions. If the first condition is false, it checks the next condition.
 
@@ -29,7 +31,7 @@ if condition1:
     elif condition2:
         # Code to execute if condition2 is true
 
-    
+
 -**`if-elif-else` Statement**: Combines the previous concepts to handle multiple conditions with a final fallback.
 
 ```python
@@ -90,9 +92,10 @@ Use if to execute code based on a condition.
 Use if-else to provide an alternative when the condition is false.
 Use if-elif to handle multiple conditions.
 Nesting allows for more complex decision-making.
-```
+````
 
 ---
+
 ---
 
 ### Multi-Choice, True, False Questions
@@ -106,16 +109,18 @@ Nesting allows for more complex decision-making.
         print("Less than 5")
         else:
             print("Equal to 5")
-A. Greater than 5
-B. Less than 5
-C. Equal to 5
-D. No output
-**Answer**: A
+   A. Greater than 5
+   B. Less than 5
+   C. Equal to 5
+   D. No output
+   **Answer**: A
+   ```
 
 ---
 
 2. **Which of the following statements is true about the following code?**
-```python
+
+````python
 y = 15
 if y < 10:
     print("Low")
@@ -139,7 +144,7 @@ if a > b:
     print("A")
     elif a < b:
         print("B")
-        
+
         else:
             print("C")
 - A. A
@@ -184,7 +189,8 @@ D. No output
 ---
 
 6. **What is the result of the following code?**
-```
+````
+
 x = 5
 if x > 0:
 if x < 10:
@@ -198,6 +204,7 @@ D. Error
 ---
 
 7. **What will happen if you run the following code?**
+
 ```
 x = True
 y = False
@@ -252,14 +259,15 @@ D. It will raise an error.
 
 10. **What will be the output of the following code?**
 ```
+
 x = 10
 y = 20
 if x == 10 and y == 20:
-    print("Both are correct")
+print("Both are correct")
 elif x == 10 or y == 20:
-    print("At least one is correct")
+print("At least one is correct")
 else:
-    print("None are correct")
+print("None are correct")
 A. Both are correct
 B. At least one is correct
 C. None are correct
@@ -267,6 +275,165 @@ D. Error
 **Answer**: A
 
 ---
-## PCEP-30-02 2.2 – Perform different types of iterations 
 
-### 1. 
+## PCEP-30-02 2.2 – Perform different types of iterations
+
+### 1. The pass Instruction
+
+The pass statement is a null operation; it does nothing when executed. It's often used as a placeholder in loops, functions, or conditionals where code will eventually go but hasn't been implemented yet.
+
+Example:
+for i in range(5):
+if i == 2:
+pass # Placeholder for future code
+print(i)
+Output:
+0
+1
+2
+3
+4
+
+In this example, when i is 2, the pass statement does nothing, and the loop continues.
+
+### 2. Building Loops with while, for, range(), and in while Loop
+
+A while loop continues to execute as long as its condition is true.
+
+- Syntax:
+  while condition: # code to execute
+
+Example:
+count = 0
+while count < 5:
+print(count)
+count += 1
+Output:
+0
+1
+2
+3
+4
+for Loop
+
+A for loop iterates over a sequence (like a list, tuple, dictionary, set, or string).
+
+- Syntax:
+  for item in sequence: # code to execute
+  Example:
+  for i in range(5):
+  print(i)
+  Output:
+
+0
+1
+2
+3
+4
+
+The range() function generates a sequence of numbers, which the loop iterates over.
+
+### 3. Iterating Through Sequences
+
+You can iterate through various sequences like lists, tuples, and strings.
+
+Example with List:
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+print(fruit)
+Output:
+apple
+banana
+cherry
+
+Example with String:
+for char in "hello":
+print(char)
+Output:
+h
+e
+l
+l
+o
+
+### 4. Expanding Loops with while-else and for-else
+
+Both while and for loops can have an else clause that executes when the loop terminates normally (not via a break statement).
+
+Example with for-else:
+for i in range(3):
+print(i)
+else:
+print("Loop finished")
+Output:
+vbnet
+0
+1
+2
+Loop finished
+
+Example with while-else:
+count = 0
+while count < 3:
+print(count)
+count += 1
+else:
+print("Loop finished")
+Output:
+vbnet
+0
+1
+2
+Loop finished
+
+### 5. Nesting Loops and Conditional Statements
+
+You can nest loops and conditional statements to perform complex iterations.
+
+Example:
+for i in range(3):
+for j in range(2):
+print(f"i: {i}, j: {j}")
+Output:
+yaml
+
+i: 0, j: 0
+i: 0, j: 1
+i: 1, j: 0
+i: 1, j: 1
+i: 2, j: 0
+i: 2, j: 1
+
+Example with Conditionals:
+for i in range(3):
+for j in range(3):
+if i == j:
+print(f"Equal indices: {i}")
+Output:
+yaml
+Equal indices: 0
+Equal indices: 1
+Equal indices: 2 6. Controlling Loop Execution with break and continue
+break
+The break statement terminates the loop immediately.
+Example:
+for i in range(5):
+if i == 3:
+break
+print(i)
+Output:
+0
+1
+2
+continue
+The continue statement skips the current iteration and moves to the next one.
+Example:
+for i in range(5):
+if i == 3:
+continue
+print(i)
+Output:
+0
+1
+2
+4
