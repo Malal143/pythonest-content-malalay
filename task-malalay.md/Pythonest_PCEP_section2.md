@@ -17,16 +17,17 @@ Conditional statements allow you to execute different blocks of code based on ce
 ```python
 if condition:
     # Code to execute if condition is true
-else:
-    # Code to execute if condition is false
+    else:
+        # Code to execute if condition is false
+        
 
 - **`if-elif` Statement**: Allows you to check multiple conditions. If the first condition is false, it checks the next condition.
 
 ```python
 if condition1:
     # Code to execute if condition1 is true
-elif condition2:
-    # Code to execute if condition2 is true
+    elif condition2:
+        # Code to execute if condition2 is true
 
     
 -**`if-elif-else` Statement**: Combines the previous concepts to handle multiple conditions with a final fallback.
@@ -34,10 +35,10 @@ elif condition2:
 ```python
 if condition1:
     # Code to execute if condition1 is true
-elif condition2:
-    # Code to execute if condition2 is true
-else:
-    # Code to execute if neither condition is true
+    elif condition2:
+        # Code to execute if condition2 is true
+        else
+        # Code to execute if neither condition is true
 
 ---
 
@@ -45,14 +46,14 @@ else:
 You can have multiple if, elif, and else statements to handle complex decision-making.
 
 
-- if condition1:
+if condition1:
     # Code for condition1
-- elif condition2:
-    # Code for condition2
-- elif condition3:
-    # Code for condition3
-- else:
-    # Code if none of the above conditions are true
+    elif condition2:
+        # Code for condition2
+        elif condition3:
+            # Code for condition3
+            else:
+                # Code if none of the above conditions are true
 
 ---
 
@@ -64,10 +65,10 @@ if condition1:
     # Code for condition1
     if condition2:
         # Code for condition2 within condition1
-    else:
-        # Code if condition2 is false
-else:
-    # Code if condition1 is false
+        else:
+            # Code if condition2 is false
+            else:
+                # Code if condition1 is false
 
 ---
 
@@ -77,10 +78,10 @@ Here's a complete example demonstrating various conditional statements:
 age = 20
 if age < 18:
     print("You are a minor.")
-elif age >= 18 and age < 65:
-    print("You are an adult.")
-else:
-    print("You are a senior citizen.")
+    elif age >= 18 and age < 65:
+        print("You are an adult.")
+        else:
+            print("You are a senior citizen.")
 
 ---
 
@@ -100,11 +101,11 @@ Nesting allows for more complex decision-making.
    ```python
    x = 10
    if x > 5:
-       print("Greater than 5")
-   elif x < 5:
-       print("Less than 5")
-   else:
-       print("Equal to 5")
+    print("Greater than 5")
+    elif x < 5:
+        print("Less than 5")
+        else:
+            print("Equal to 5")
 A. Greater than 5
 B. Less than 5
 C. Equal to 5
@@ -118,10 +119,10 @@ D. No output
 y = 15
 if y < 10:
     print("Low")
-elif y < 20:
-    print("Medium")
-else:
-    print("High")
+    elif y < 20:
+        print("Medium")
+        else:
+            print("High")
 A. It will print "Low".
 B. It will print "Medium".
 C. It will print "High".
@@ -136,10 +137,11 @@ a = 5
 b = 10
 if a > b:
     print("A")
-elif a < b:
-    print("B")
-else:
-    print("C")
+    elif a < b:
+        print("B")
+        
+        else:
+            print("C")
 - A. A
 - B. B
 - C. C
@@ -153,8 +155,8 @@ else:
 x = 0
 if x:
     print("True")
-else:
-    print("False")
+    else:
+        print("False")
 What will be printed?
 A. True
 B. False
@@ -169,10 +171,10 @@ D. No output
 num = 8
 if num % 2 == 0:
     print("Even")
-elif num % 2 == 1:
-    print("Odd")
-else:
-    print("Not a number")
+    elif num % 2 == 1:
+        print("Odd")
+        else:
+            print("Not a number")
 A. Even
 B. Odd
 C. Not a number
@@ -185,8 +187,8 @@ D. No output
 ```
 x = 5
 if x > 0:
-    if x < 10:
-        print("x is positive and less than 10")
+if x < 10:
+print("x is positive and less than 10")
 A. x is positive and less than 10
 B. x is positive
 C. No output
@@ -200,8 +202,8 @@ D. Error
 x = True
 y = False
 if x:
-    if y:
-        print("Both True")
+if y:
+print("Both True")
     else:
         print("Only x is True")
 else:
@@ -263,3 +265,8 @@ B. At least one is correct
 C. None are correct
 D. Error
 **Answer**: A
+
+---
+## PCEP-30-02 2.2 – Perform different types of iterations 
+
+### 1. 
