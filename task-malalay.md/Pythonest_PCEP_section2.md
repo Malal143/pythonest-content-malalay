@@ -15,25 +15,25 @@ if-else Statement: Executes one block of code if the condition is true, and anot
 
 
 - **`if` condition**:
-    # Code to execute if condition is true
+    ~ Code to execute if condition is true
 else:
-    # Code to execute if condition is false
+     ~ Code to execute if condition is false
 if-elif Statement: Allows you to check multiple conditions. If the first condition is false, it checks the next condition.
 
 
 - **`if`condition1**:
-    # Code to execute if condition1 is true
+    ~ Code to execute if condition1 is true
 elif condition2:
-    # Code to execute if condition2 is true
+    ~ Code to execute if condition2 is true
 if-elif-else Statement: Combines the previous concepts to handle multiple conditions with a final fallback.
 
 
 - **`if` condition1**:
-    # Code to execute if condition1 is true
+    ~ Code to execute if condition1 is true
 elif condition2:
-    # Code to execute if condition2 is true
+    ~ Code to execute if condition2 is true
 else:
-    # Code to execute if neither condition is true
+    ~ Code to execute if neither condition is true
 
 ---
 
