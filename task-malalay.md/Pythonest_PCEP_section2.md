@@ -45,13 +45,13 @@ else:
 You can have multiple if, elif, and else statements to handle complex decision-making.
 
 
-- **`if` condition1**:
+- if condition1:
     # Code for condition1
-elif condition2:
+- elif condition2:
     # Code for condition2
-elif condition3:
+- elif condition3:
     # Code for condition3
-else:
+- else:
     # Code if none of the above conditions are true
 
 ---
@@ -71,12 +71,10 @@ else:
 
 ---
 
-### 4. Example
+- **`Example`**
 Here's a complete example demonstrating various conditional statements:
 
-
 age = 20
-
 if age < 18:
     print("You are a minor.")
 elif age >= 18 and age < 65:
@@ -116,7 +114,7 @@ D. No output
 ---
 
 2. **Which of the following statements is true about the following code?**
-
+```python
 y = 15
 if y < 10:
     print("Low")
@@ -133,7 +131,7 @@ D. It will raise an error.
 ---
 
 3. **What is the output of the following code?**
-
+```python
 a = 5
 b = 10
 if a > b:
@@ -151,7 +149,7 @@ else:
 ---
 
 4. **Consider the following code snippet:**
-
+```python
 x = 0
 if x:
     print("True")
@@ -167,7 +165,7 @@ D. No output
 ---
 
 5. **What will be the output of this code?**
-
+```python
 num = 8
 if num % 2 == 0:
     print("Even")
@@ -184,7 +182,7 @@ D. No output
 ---
 
 6. **What is the result of the following code?**
-
+```
 x = 5
 if x > 0:
     if x < 10:
@@ -198,7 +196,7 @@ D. Error
 ---
 
 7. **What will happen if you run the following code?**
-
+```
 x = True
 y = False
 if x:
@@ -251,7 +249,7 @@ D. It will raise an error.
 ---
 
 10. **What will be the output of the following code?**
-
+```
 x = 10
 y = 20
 if x == 10 and y == 20:
