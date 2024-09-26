@@ -189,12 +189,12 @@ D. No output
 ---
 
 6. **What is the result of the following code?**
-````
 
+```python
 x = 5
 if x > 0:
-if x < 10:
-print("x is positive and less than 10")
+    if x < 10:
+        print("x is positive and less than 10")
 A. x is positive and less than 10
 B. x is positive
 C. No output
@@ -209,9 +209,9 @@ D. Error
 x = True
 y = False
 if x:
-if y:
-print("Both True")
-    else:
+    if y:
+        print("Both True")
+else:
         print("Only x is True")
 else:
     print("x is False")
@@ -327,7 +327,7 @@ print(fruit)
 Both while and for loops can have an else clause that runs if the loop completes normally (not terminated by break).
 
 Example:
-
+```python
 for i in range(3):
 print(i)
 else:
@@ -370,3 +370,4 @@ for i in range(5):
 if i == 2:
 continue # Skip the rest of the loop when i is 2
 print(i)
+````
