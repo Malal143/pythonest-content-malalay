@@ -278,162 +278,95 @@ D. Error
 
 ## PCEP-30-02 2.2 – Perform different types of iterations
 
-### 1. The pass Instruction
+### 1.The pass Instruction
 
-The pass statement is a null operation; it does nothing when executed. It's often used as a placeholder in loops, functions, or conditionals where code will eventually go but hasn't been implemented yet.
+The pass statement is a null operation; it does nothing when executed. It's often used as a placeholder in loops, functions, or classes where code will eventually go but is not yet implemented.
 
 Example:
 for i in range(5):
 if i == 2:
 pass # Placeholder for future code
 print(i)
-Output:
-0
-1
-2
-3
-4
 
-In this example, when i is 2, the pass statement does nothing, and the loop continues.
+### 2. Building Loops
 
-### 2. Building Loops with while, for, range(), and in while Loop
+Python supports several types of loops: while and for.
 
-A while loop continues to execute as long as its condition is true.
+#### a. while Loop
 
-- Syntax:
-  while condition: # code to execute
+A while loop continues executing as long as a condition is True.
 
 Example:
+
 count = 0
 while count < 5:
 print(count)
 count += 1
-Output:
-0
-1
-2
-3
-4
-for Loop
 
-A for loop iterates over a sequence (like a list, tuple, dictionary, set, or string).
+#### b. for Loop
 
-- Syntax:
-  for item in sequence: # code to execute
-  Example:
-  for i in range(5):
-  print(i)
-  Output:
+A for loop iterates over a sequence (like a list, tuple, or string).
 
-0
-1
-2
-3
-4
+Example:
 
-The range() function generates a sequence of numbers, which the loop iterates over.
+for i in range(5):
+print(i)
 
 ### 3. Iterating Through Sequences
 
-You can iterate through various sequences like lists, tuples, and strings.
+You can iterate through various data structures like lists, tuples, and strings.
 
-Example with List:
-fruits = ["apple", "banana", "cherry"]
+Example:
+
+fruits = ['apple', 'banana', 'cherry']
 for fruit in fruits:
 print(fruit)
-Output:
-apple
-banana
-cherry
-
-Example with String:
-for char in "hello":
-print(char)
-Output:
-h
-e
-l
-l
-o
 
 ### 4. Expanding Loops with while-else and for-else
 
-Both while and for loops can have an else clause that executes when the loop terminates normally (not via a break statement).
+Both while and for loops can have an else clause that runs if the loop completes normally (not terminated by break).
 
-Example with for-else:
+Example:
+
 for i in range(3):
 print(i)
 else:
-print("Loop finished")
-Output:
-vbnet
-0
-1
-2
-Loop finished
+print("Loop completed without break.")
 
-Example with while-else:
 count = 0
 while count < 3:
 print(count)
 count += 1
 else:
-print("Loop finished")
-Output:
-vbnet
-0
-1
-2
-Loop finished
+print("While loop completed without break.")
 
 ### 5. Nesting Loops and Conditional Statements
 
-You can nest loops and conditional statements to perform complex iterations.
+You can nest loops and conditionals to create more complex logic.
 
 Example:
+
 for i in range(3):
 for j in range(2):
-print(f"i: {i}, j: {j}")
-Output:
-yaml
-
-i: 0, j: 0
-i: 0, j: 1
-i: 1, j: 0
-i: 1, j: 1
-i: 2, j: 0
-i: 2, j: 1
-
-Example with Conditionals:
-for i in range(3):
-for j in range(3):
 if i == j:
-print(f"Equal indices: {i}")
-Output:
-yaml
-Equal indices: 0
-Equal indices: 1
-Equal indices: 2 6. Controlling Loop Execution with break and continue
-break
-The break statement terminates the loop immediately.
+print(f"i: {i}, j: {j} - They are equal")
+else:
+print(f"i: {i}, j: {j} - They are not equal")
+
+### 6. Controlling Loop Execution with break and continue
+
+break: Terminates the loop.
+continue: Skips the current iteration and continues with the next one.
 Example:
+
 for i in range(5):
-if i == 3:
-break
+if i == 2:
+break # Exit the loop when i is 2
 print(i)
-Output:
-0
-1
-2
-continue
-The continue statement skips the current iteration and moves to the next one.
-Example:
+
+print("-----")
+
 for i in range(5):
-if i == 3:
-continue
+if i == 2:
+continue # Skip the rest of the loop when i is 2
 print(i)
-Output:
-0
-1
-2
-4
