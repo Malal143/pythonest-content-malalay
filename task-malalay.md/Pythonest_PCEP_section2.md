@@ -14,31 +14,34 @@ Conditional statements allow you to execute different blocks of code based on ce
 if-else Statement: Executes one block of code if the condition is true, and another block if it is false.
 
 
-if condition:
+- **`if` condition**:
     # Code to execute if condition is true
 else:
     # Code to execute if condition is false
 if-elif Statement: Allows you to check multiple conditions. If the first condition is false, it checks the next condition.
 
 
-if condition1:
+- **`if`condition1**:
     # Code to execute if condition1 is true
 elif condition2:
     # Code to execute if condition2 is true
 if-elif-else Statement: Combines the previous concepts to handle multiple conditions with a final fallback.
 
 
-if condition1:
+- **`if` condition1**:
     # Code to execute if condition1 is true
 elif condition2:
     # Code to execute if condition2 is true
 else:
     # Code to execute if neither condition is true
-2. Multiple Conditional Statements
+
+---
+
+### 2. Multiple Conditional Statements
 You can have multiple if, elif, and else statements to handle complex decision-making.
 
 
-if condition1:
+- **`if` condition1**:
     # Code for condition1
 elif condition2:
     # Code for condition2
@@ -46,7 +49,10 @@ elif condition3:
     # Code for condition3
 else:
     # Code if none of the above conditions are true
-3. Nesting Conditional Statements
+
+---
+
+### 3. Nesting Conditional Statements
 You can nest conditional statements within each other to create more complex logic.
 
 
@@ -58,7 +64,10 @@ if condition1:
         # Code if condition2 is false
 else:
     # Code if condition1 is false
-4. Example
+
+---
+
+### 4. Example
 Here's a complete example demonstrating various conditional statements:
 
 
@@ -70,7 +79,10 @@ elif age >= 18 and age < 65:
     print("You are an adult.")
 else:
     print("You are a senior citizen.")
-Summary
+
+---
+
+### Summary
 Use if to execute code based on a condition.
 Use if-else to provide an alternative when the condition is false.
 Use if-elif to handle multiple conditions.
