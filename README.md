@@ -314,7 +314,7 @@ for i in range(3):
             else:
                 print(f"i: {i}, j: {j} - They are not equal")
 
-### 6. Controlling Loop Execution with break and continue
+## 6. Controlling Loop Execution with break and continue
 
 `break`: Terminates the loop.
 `continue`: Skips the current iteration and continues with the next one.
