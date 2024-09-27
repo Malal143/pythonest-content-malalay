@@ -94,27 +94,33 @@ You can create lists of lists to represent matrices or cubes.
 
 #### Matrix (2D list)
 
-matrix = [/
-[1, 2, 3],/
-
-[4, 5, 6],/
-
-[7, 8, 9],/
+matrix = [
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]
 ]
 
-#### Accessing elements in a matrix
+`# Acessing elements in a matrix`
 
-element = matrix[1]![2] # 6
+element = matrix[1][2] # 6
 
 #### Cube (3D list)
 
-cube = [/
-[/
-[1, 2],/
-[3, 4],/
-],/
-[/
-[5, 6],/
-[7, 8],/
-],/
+cube = [
+
+[
+
+[1, 2],
+
+[3, 4]
+
+],
+
+[
+
+[5, 6],
+
+[7, 8]
+
+]
 ]
