@@ -735,6 +735,7 @@ new_tuple = my_tuple + (4,) # Output: (1, 2, 3, 4)
 - Lists Inside Tuples
   You can store lists as elements within a tuple. This allows you to create complex data structures.
 
+```python
 my_tuple = ([1, 2], [3, 4])
 print(my_tuple[0]) # Output: [1, 2]
 print(my_tuple[0][1]) # Output: 2
@@ -750,4 +751,5 @@ my_list = [(1, 2), (3, 4)]
 print(my_list[0]) # Output: (1, 2)
 print(my_list[1][0]) # Output: 3
 
-- Accessing Tuples: You can access tuples within a list just like any other list element.
+-Accessing Tuples: You can access tuples within a list just like any other list element.
+```
