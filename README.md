@@ -398,7 +398,7 @@ print(i, j)
 - C. (0, 0) (1, 1) (2, 2) (2, 2)
 - D. No output
 
-  **Answer:** B
+**Answer:** B
 
 ## 6. Controlling Loop Execution with break
 
@@ -414,7 +414,7 @@ print(i)
 - C. 1 2 3
 - D. 0 1 2 3 4
 
-  **Answer:** B
+**Answer:** B
 
 ## 7. Controlling Loop Execution with continue
 
@@ -430,7 +430,7 @@ print(i)
 - C. 0 1 2 3
 - D. 1 2 3 4
 
-  **Answer:** B
+**Answer:** B
 
 ## 8. Using range()
 
@@ -444,7 +444,7 @@ print(i, end=' ')
 - C. 1 2 3 4 5 6 7 8 9
 - D. 1 2 3 4 5 6 7 8
 
-  **Answer:** B
+**Answer:** B
 
 ### 9. Nested Loops
 
@@ -459,7 +459,7 @@ print("Hello")
 - C. 5
 - D. 6
 
-  **Answer:** D
+**Answer:** D
 
 ### 10. Using for with in
 
@@ -470,4 +470,4 @@ print("Hello")
 - C. It cannot be used with strings.
 - D. It requires a counter variable.
 
-  **Answer:** A
+**Answer:** A
