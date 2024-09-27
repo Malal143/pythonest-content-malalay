@@ -87,7 +87,6 @@ if age < 18:
 ### Multi-Choice, True, False Questions
 
 1. **What will be the output of the following code?**
-```python
 x = 10
 if x > 5:
     print("Greater than 5")
@@ -103,8 +102,6 @@ D. No output
 
 ```
 2. **Which of the following statements is true about the following code?**
-
-```python
 y = 15
 if y < 10:
     print("Low")
@@ -120,7 +117,6 @@ D. It will raise an error.
 
 ```
 3. **What is the output of the following code?**
-```python
 a = 5
 b = 10
 if a > b:
@@ -136,10 +132,8 @@ if a > b:
 - D. No output
 - **Answer**: B
 
----
-
+```
 4. **Consider the following code snippet:**
-```python
 x = 0
 if x:
     print("True")
@@ -152,10 +146,8 @@ C. 0
 D. No output
 **Answer**: B
 
----
-
+```
 5. **What will be the output of this code?**
-```python
 num = 8
 if num % 2 == 0:
     print("Even")
@@ -169,11 +161,8 @@ C. Not a number
 D. No output
 **Answer**: A
 
----
-
+```
 6. **What is the result of the following code?**
-
-```python
 x = 5
 if x > 0:
     if x < 10:
@@ -184,11 +173,8 @@ C. No output
 D. Error
 **Answer**: A
 
----
-
-7. **What will happen if you run the following code?**
-
 ```
+7. **What will happen if you run the following code?**
 x = True
 y = False
 if x:
@@ -204,10 +190,8 @@ C. x is False
 D. No output
 **Answer**: B
 
----
-
+```
 8. **What is the output of the following code?**
-
 x = 20
 if x > 10:
     print("A")
@@ -221,10 +205,8 @@ C. C
 D. No output
 **Answer**: A
 
----
-
+```
 9. **Which of the following statements is correct regarding the following code?**
-
 x = -1
 if x > 0:
     print("Positive")
@@ -238,11 +220,8 @@ C. It will print "Zero".
 D. It will raise an error.
 **Answer**: B
 
----
-
-10. **What will be the output of the following code?**
 ```
-
+10. **What will be the output of the following code?**
 x = 10
 y = 20
 if x == 10 and y == 20:
@@ -257,8 +236,7 @@ C. None are correct
 D. Error
 **Answer**: A
 
----
-
+```
 ## PCEP-30-02 2.2 – Perform different types of iterations
 
 ### 1.The pass Instruction
