@@ -1082,3 +1082,133 @@ D) ([5, 6], (3, 4))
 
 Answer: A
 ```
+
+## PCEP-30-02: Collect and Process Data Using Dictionaries
+
+### 1. Dictionaries: Building, Indexing, Adding, and Removing Keys
+
+`What is a Dictionary?`
+A dictionary is an unordered collection of items in Python that stores data in key-value pairs. Each key must be unique, and it is used to access the corresponding value.
+
+`Building Dictionaries`
+Creating a Dictionary: You can create a dictionary using curly braces {} or the dict() constructor.
+
+```python
+my_dict = {'name': 'Alice', 'age': 25}
+another_dict = dict(name='Bob', age=30)
+```
+
+`Empty Dictionary:` To create an empty dictionary, use:
+
+```python
+empty_dict = {}
+```
+
+`Indexing`
+
+- Accessing Values: You can access values in a dictionary using their keys.
+
+```python
+print(my_dict['name']) # Output: Alice
+```
+
+- KeyError: If you try to access a key that does not exist, a KeyError will be raised.
+
+```python
+print(my_dict['gender']) # Raises KeyError
+```
+
+`Adding Keys`
+
+- Adding New Key-Value Pairs: You can add new key-value pairs by assigning a value to a new key.
+
+```python
+my_dict['gender'] = 'Female'
+```
+
+- Updating Existing Keys: You can update the value of an existing key in the same way.
+
+```python
+my_dict['age'] = 26
+```
+
+`Removing Keys`
+
+- Using del: You can remove a key-value pair using the del statement.
+
+```python
+del my_dict['age']
+```
+
+- Using `pop()`: You can also use the `pop()` method to remove a key and return its value.
+
+age = my_dict.pop('age', None) # Returns None if 'age' doesn't exist
+
+### 2. Iterating Through Dictionaries and Their Keys and Values
+
+`Iterating Through Keys`
+
+- You can iterate through the keys of a dictionary using a for loop.
+
+```python
+for key in my_dict:
+print(key)
+
+- Alternatively, you can use the keys() method:
+
+for key in my_dict.keys():
+print(key)
+```
+
+`Iterating Through Values`
+
+- To iterate through the values, use the values() method.
+
+```python
+for value in my_dict.values():
+print(value)
+```
+
+`Iterating Through Key-Value Pairs`
+
+- To iterate through both keys and values, use the items() method.
+
+```python
+for key, value in my_dict.items():
+print(f"{key}: {value}")
+
+```
+
+### 3. Checking the Existence of Keys
+
+- You can check if a key exists in a dictionary using the in keyword.
+
+```python
+if 'name' in my_dict:
+print("Key 'name' exists.")
+```
+
+- Alternatively, you can use the `get()` method, which returns `None` if the key does not exist (or a specified default value).
+
+```python
+age = my_dict.get('age', 'Not Found') # Returns 'Not Found' if 'age' doesn't exist
+```
+
+### 4. Methods: keys(), items(), and values()
+
+-`keys()`: Returns a view object that displays a list of all the keys in the dictionary.
+
+keys = my_dict.keys()
+print(keys) # Output: dict_keys(['name', 'gender'])
+
+`values():` Returns a view object that displays a list of all the values in the dictionary.
+
+```python
+values = my_dict.values()
+print(values) # Output: dict_values(['Alice', 'Female'])
+```
+
+- `items():` Returns a view object that displays a list of tuples, each containing a key-value pair.
+
+items = my_dict.items()
+print(items) # Output: dict_items([('name', 'Alice'), ('gender', 'Female')])
