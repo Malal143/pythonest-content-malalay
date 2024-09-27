@@ -1210,5 +1210,7 @@ print(values) # Output: dict_values(['Alice', 'Female'])
 
 - `items():` Returns a view object that displays a list of tuples, each containing a key-value pair.
 
+```python
 items = my_dict.items()
 print(items) # Output: dict_items([('name', 'Alice'), ('gender', 'Female')])
+```
