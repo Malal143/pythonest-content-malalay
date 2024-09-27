@@ -316,8 +316,9 @@ for i in range(3):
 
 ### 6. Controlling Loop Execution with break and continue
 
-break: Terminates the loop.
-continue: Skips the current iteration and continues with the next one.
+`break`: Terminates the loop.
+`continue`: Skips the current iteration and continues with the next one.
+
 Example:
 
 for i in range(5):
@@ -330,3 +331,136 @@ for i in range(5):
                 continue # Skip the rest of the loop when i is 2
                 print(i)
 ````
+
+## Multi-Choice, True, False Questions
+
+### 1. The `pass` Instruction
+
+**1.** What is the purpose of the `pass` statement in Python?
+
+- A. To terminate a loop
+- B. To define an empty block of code
+- C. To raise an exception
+- D. To return a value
+
+**Answer:** B
+
+---
+
+### 2. Building Loops with `while`, `for`, `range()`, and `in`
+
+**2.** Which of the following correctly creates a loop that prints numbers from 1 to 5?
+
+- A. `for i in range(5): print(i)`
+- B. `for i in range(1, 6): print(i)`
+- C. `while i < 5: print(i); i += 1`
+- D. `while i < 6: print(i); i += 1`
+
+**Answer:** B
+
+## 3. Iterating Through Sequences
+
+**3.** What will be the output of the following code?
+
+fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+print(fruit[0])
+
+- A. a b c
+- B. apple banana cherry
+- C. ['a', 'b', 'c']
+- D. Error
+
+**Answer:** A
+
+## 4. Expanding Loops with while-else and for-else
+
+**4.** What does the else block do in a for loop?
+
+- A. It executes when the loop is terminated by a break statement.
+- B. It executes when the loop completes normally without hitting a break.
+- C. It executes for every iteration of the loop.
+- D. It has no effect.
+  **Answer:** B
+
+## 5. Nesting Loops and Conditional Statements
+
+**5.** What will be the output of the following code?
+
+for i in range(3):
+for j in range(2):
+if i == j:
+print(i, j)
+
+- A. (0, 0) (1, 1) (2, 2)
+- B. (0, 0) (1, 1)
+- C. (0, 0) (1, 1) (2, 2) (2, 2)
+- D. No output
+  **Answer:** B
+
+## 6. Controlling Loop Execution with break
+
+**6.** What will be the output of the following code?
+
+for i in range(5):
+if i == 3:
+break
+print(i)
+
+- A. 0 1 2 3
+- B. 0 1 2
+- C. 1 2 3
+- D. 0 1 2 3 4
+  **Answer:** B
+
+## 7. Controlling Loop Execution with continue
+
+**7.** What will be the output of the following code?
+
+for i in range(5):
+if i == 2:
+continue
+print(i)
+
+- A. 0 1 2 3 4
+- B. 0 1 3 4
+- C. 0 1 2 3
+- D. 1 2 3 4
+  **Answer:** B
+
+## 8. Using range()
+
+**8.** What will be the output of the following code?
+
+for i in range(1, 10, 2):
+print(i, end=' ')
+
+- A. 1 2 3 4 5 6 7 8 9
+- B. 1 3 5 7 9
+- C. 1 2 3 4 5 6 7 8 9
+- D. 1 2 3 4 5 6 7 8
+  **Answer:** B
+
+### 9. Nested Loops
+
+Question 9: How many times will "Hello" be printed in the following code?
+
+for i in range(2):
+for j in range(3):
+print("Hello")
+
+- A. 2
+- B. 3
+- C. 5
+- D. 6
+  **Answer:** D
+
+### 10. Using for with in
+
+**10.** Which of the following statements is true about the for loop?
+
+- A. It can iterate over any iterable object.
+- B. It can only iterate over lists.
+- C. It cannot be used with strings.
+- D. It requires a counter variable.
+  **Answer:** A
