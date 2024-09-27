@@ -94,9 +94,12 @@ You can create lists of lists to represent matrices or cubes.
 
 #### Matrix (2D list)
 
+```python
 matrix = [
 [1, 2, 3],
+
 [4, 5, 6],
+
 [7, 8, 9]
 ]
 
@@ -124,3 +127,4 @@ cube = [
 
 ]
 ]
+```
