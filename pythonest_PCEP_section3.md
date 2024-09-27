@@ -752,4 +752,333 @@ print(my_list[0]) # Output: (1, 2)
 print(my_list[1][0]) # Output: 3
 
 -Accessing Tuples: You can access tuples within a list just like any other list element.
+
+```
+
+### Multi-Choice, True, False Question
+
+1. Tuples: Indexing, Slicing, Building, Immutability
+
+1. What will be the output of the following code?
+
+   ```python
+   my_tuple = (1, 2, 3, 4)
+   print(my_tuple[1:3])
+   ```
+
+A) (2, 3)
+B) (1, 2, 3)
+C) [2, 3]
+D) (2, 3, 4)
+
+Answer: A
+
+2.Which of the following statements is true about tuples?
+
+A) Tuples are mutable.
+B) Tuples can contain lists.
+C) Tuples are defined using square brackets.
+D) Tuples cannot be empty.
+
+Answer: B
+
+3.What will the following code return?
+
+my_tuple = (1, 2, 3)
+my_tuple[0] = 10
+A) (10, 2, 3)
+B) TypeError
+C) None
+D) (1, 2, 3, 10)
+
+Answer: B
+
+4.How do you create a single-element tuple?
+
+A) single_tuple = (1)
+B) single_tuple = [1]
+C) single_tuple = (1,)
+D) single_tuple = 1,
+
+Answer: C
+
+5.What is the result of the following operation?
+
+```python
+my_tuple = (1, 2, 3)
+new_tuple = my_tuple + (4,)
+print(new_tuple)
+A) (1, 2, 3, 4)
+B) (1, 2, 3)
+C) TypeError
+D) (4, 1, 2, 3)
+
+Answer: A
+
+6. Which of the following correctly slices the tuple my_tuple = (0, 1, 2, 3, 4) to get (1, 2, 3)?
+
+A) my_tuple[1:4]
+B) my_tuple[1:3]
+C) my_tuple[1:5]
+D) my_tuple[0:3]
+
+Answer: A
+
+7. What will be the output of the following code?
+
+my_tuple = (1, 2, 3)
+print(my_tuple[-2])
+A) 1
+B) 2
+C) 3
+D) TypeError
+
+Answer: B
+
+8. Which method can you use to convert a list to a tuple?
+
+A) list()
+B) tuple()
+C) convert()
+D) set()
+
+Answer: B
+
+9. Given the tuple my_tuple = (1, (2, 3), 4), what will my_tuple[1][0] return?
+
+A) 1
+B) 2
+C) 3
+D) 4
+
+Answer: B
+
+10. What is the result of the following code?
+
+my_tuple = (1, 2, 3)
+my_list = list(my_tuple)
+my_list[0] = 10
+print(my_tuple)
+A) (10, 2, 3)
+B) (1, 2, 3)
+C) TypeError
+D) (1, 10, 3)
+
+Answer: B
+```
+
+#### 2.Tuples vs. Lists: Similarities and Differences
+
+1. Which of the following is a key difference between tuples and lists?
+
+```python
+A) Both can store heterogeneous data.
+B) Tuples are mutable, while lists are immutable.
+C) Tuples are defined with parentheses, while lists use brackets.
+D) Both support the same methods.
+
+Answer: C
+
+2.What is the primary reason to use a tuple instead of a list?
+
+A) Tuples can contain only numbers.
+B) Tuples are faster and consume less memory.
+C) Tuples can be modified after creation.
+D) Tuples support more methods than lists.
+
+Answer: B
+
+3.Which of the following methods is not available for tuples?
+
+A) count()
+B) append()
+C) index()
+D) len()
+
+Answer: B
+
+4.If my_list = [1, 2, 3] and my_tuple = (1, 2, 3), what is the output of the following code?
+
+print(my_list == my_tuple)
+A) True
+B) False
+C) TypeError
+D) None
+
+Answer: B
+
+5.Which of the following statements is true?
+
+A) Lists can be used as keys in dictionaries, but tuples cannot.
+B) Tuples can be used as keys in dictionaries, but lists cannot.
+C) Both lists and tuples can be used as keys in dictionaries.
+D) Neither lists nor tuples can be used as keys in dictionaries.
+
+Answer: B
+
+6.Which operation can be performed on a tuple but not on a list?
+
+A) Indexing
+B) Slicing
+C) Concatenation
+D) None; both support all operations.
+
+Answer: D
+
+7.What will be the output of the following code?
+
+my_list = [1, 2, 3]
+my_tuple = (1, 2, 3)
+print(type(my_list) == type(my_tuple))
+A) True
+B) False
+C) TypeError
+D) None
+
+Answer: B
+
+8.Which of the following can lead to a TypeError?
+
+A) Trying to modify a list.
+B) Trying to modify a tuple.
+C) Accessing an index out of range in a tuple.
+D) Accessing an index out of range in a list.
+
+Answer: B
+
+9. Which of the following is a valid way to create a tuple from a list?
+
+A) tuple = (my_list)
+B) my_tuple = my_list()
+C) my_tuple = tuple(my_list)
+D) my_tuple = list(my_tuple)
+
+Answer: C
+
+10. What will be the output of the following code?
+
+my_tuple = (1, 2, 3)
+my_list = [my_tuple] * 2
+print(my_list)
+A) [(1, 2, 3), (1, 2, 3)]
+B) [(1, 2, 3, 1, 2, 3)]
+C) TypeError
+D) [(1, 2), (3)]
+
+Answer: A
+
+```
+
+#### 3.Lists Inside Tuples and Tuples Inside Lists
+
+1. What will the following code output?
+
+```python
+my_tuple = ([1, 2], [3, 4])
+my_tuple[0].append(3)
+print(my_tuple)
+A) ([1, 2], [3, 4])
+B) ([1, 2, 3], [3, 4])
+C) TypeError
+D) ([1, 2], [3, 4, 3])
+
+Answer: A
+2. Which of the following is a valid operation?
+
+A) my_list = [(1, 2), (3, 4)]
+B) my_list = (1, [2, 3])
+C) my_tuple = [1, 2, (3, 4)]
+D) All of the above.
+
+Answer: D
+
+3. Given the following code, what will be the output?
+
+my_list = [(1, 2), (3, 4)]
+print(my_list[1][0])
+A) 1
+B) 2
+C) 3
+D) 4
+
+Answer: C
+
+4. What will happen if you try to append a tuple to a list inside a tuple?
+
+my_tuple = ([1, 2], [3, 4])
+my_tuple[0].append((5, 6))
+print(my_tuple)
+A) ([1, 2], [3, 4])
+B) ([1, 2, (5, 6)], [3, 4])
+C) TypeError
+D) ([1, 2], [3, 4, (5, 6)])
+
+Answer: B
+
+5. What will be the output of the following code?
+
+my_tuple = (1, 2, [3, 4])
+my_tuple[2][0] = 5
+print(my_tuple)
+A) (1, 2, [5, 4])
+B) TypeError
+C) (1, 2, 3)
+D) (1, 2, [3, 4])
+
+Answer: A
+
+6. Which of the following is true about nesting tuples and lists?
+
+A) You can only nest tuples inside lists.
+B) You can only nest lists inside tuples.
+C) Both nesting is allowed.
+D) Nesting is not allowed in Python.
+
+Answer: C
+
+7. What will the following code output?
+
+my_list = [(1, 2), (3, 4)]
+my_tuple = (my_list, (5, 6))
+print(my_tuple[0][1][0])
+A) 1
+B) 2
+C) 3
+D) 5
+
+Answer: C
+
+8. What is the output of the following code?
+
+my_list = [1, 2, 3]
+my_tuple = (my_list,)
+my_tuple[0][0] = 10
+print(my_tuple)
+A) (10, 2, 3)
+B) (1, 2, 3)
+C) TypeError
+D) None
+
+Answer: A
+
+9. Given the tuple my_tuple = (1, [2, 3], 4), what will my_tuple[1].append(5) do?
+
+A) (1, [2, 3, 5], 4)
+B) TypeError
+C) (1, 2, 3, 5, 4)
+D) (1, [5], 4)
+
+Answer: A
+
+10. What will the following code return?
+
+my_tuple = ([1, 2], (3, 4))
+my_tuple[0].extend([5, 6])
+print(my_tuple)
+A) ([1, 2, 5, 6], (3, 4))
+B) TypeError
+C) ([1, 2], [5, 6])
+D) ([5, 6], (3, 4))
+
+Answer: A
 ```
