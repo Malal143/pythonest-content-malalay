@@ -22,7 +22,7 @@ if condition:
     else:
         # Code to execute if condition is false
 
-
+```
 - **`if-elif` Statement**: Allows you to check multiple conditions. If the first condition is false, it checks the next condition.
 
 ```python
@@ -31,7 +31,7 @@ if condition1:
     elif condition2:
         # Code to execute if condition2 is true
 
-
+```
 -**`if-elif-else` Statement**: Combines the previous concepts to handle multiple conditions with a final fallback.
 
 ```python
@@ -42,7 +42,7 @@ if condition1:
         else
         # Code to execute if neither condition is true
 
----
+```
 
 ### 2. Multiple Conditional Statements
 You can have multiple if, elif, and else statements to handle complex decision-making.
@@ -57,8 +57,7 @@ if condition1:
             else:
                 # Code if none of the above conditions are true
 
----
-
+```
 ### 3. Nesting Conditional Statements
 You can nest conditional statements within each other to create more complex logic.
 
@@ -72,8 +71,7 @@ if condition1:
             else:
                 # Code if condition1 is false
 
----
-
+```
 - **`Example`**
 Here's a complete example demonstrating various conditional statements:
 
@@ -85,42 +83,28 @@ if age < 18:
         else:
             print("You are a senior citizen.")
 
----
-
-### Summary
-Use if to execute code based on a condition.
-Use if-else to provide an alternative when the condition is false.
-Use if-elif to handle multiple conditions.
-Nesting allows for more complex decision-making.
-````
-
----
-
----
-
+```
 ### Multi-Choice, True, False Questions
 
 1. **What will be the output of the following code?**
-   ```python
-   x = 10
-   if x > 5:
+```python
+x = 10
+if x > 5:
     print("Greater than 5")
     elif x < 5:
         print("Less than 5")
         else:
             print("Equal to 5")
-   A. Greater than 5
-   B. Less than 5
-   C. Equal to 5
-   D. No output
-   **Answer**: A
-   ```
+A. Greater than 5
+B. Less than 5
+C. Equal to 5
+D. No output
+**Answer**: A
 
----
-
+```
 2. **Which of the following statements is true about the following code?**
 
-````python
+```python
 y = 15
 if y < 10:
     print("Low")
@@ -134,8 +118,7 @@ C. It will print "High".
 D. It will raise an error.
 **Answer**: B
 
----
-
+```
 3. **What is the output of the following code?**
 ```python
 a = 5
