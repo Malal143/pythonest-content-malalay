@@ -102,7 +102,7 @@ matrix = [
 
 #### Accessing elements in a matrix
 
-element = matrix[1][2] # 6
+element = matrix[1]![2] # 6
 
 #### Cube (3D list)
 
