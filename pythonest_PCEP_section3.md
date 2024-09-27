@@ -755,7 +755,7 @@ print(my_list[1][0]) # Output: 3
 
 ```
 
-### Multi-Choice, True, False Question
+### Multi-Choice, Questions
 
 1. Tuples: Indexing, Slicing, Building, Immutability
 
@@ -1198,8 +1198,10 @@ age = my_dict.get('age', 'Not Found') # Returns 'Not Found' if 'age' doesn't exi
 
 -`keys()`: Returns a view object that displays a list of all the keys in the dictionary.
 
+```python
 keys = my_dict.keys()
 print(keys) # Output: dict_keys(['name', 'gender'])
+```
 
 `values():` Returns a view object that displays a list of all the values in the dictionary.
 
