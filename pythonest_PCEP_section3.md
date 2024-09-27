@@ -1219,6 +1219,7 @@ print(items) # Output: dict_items([('name', 'Alice'), ('gender', 'Female')])
 
 ### multi choice, Question with Answers
 
+```python
 1. What method would you use to retrieve all keys from a dictionary?
 
 A) get_keys()
@@ -1248,7 +1249,6 @@ Answer: C
 
 4.What will be the output of the following code?
 
-```python
 d = {'a': 1, 'b': 2}
 print(d.get('c', 3))
 
