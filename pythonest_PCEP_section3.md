@@ -131,3 +131,522 @@ cube = [
 ]
 ]
 ```
+
+### Multi-Choice, True, False Questions
+
+`1. Constructing Vectors`
+
+1. What is the correct way to create a vector in Python?
+
+- A) `vector = []`
+- B) `vector = ()`
+- C) `vector = {}`
+- D) `vector = [1, 2, 3]`
+
+- **Answer**: D
+
+  2.Which of the following initializes a vector with three elements?
+
+- A) `vector = [1, 2, 3]`
+- B) `vector = [1; 2; 3]`
+- C) `vector = (1, 2, 3)`
+- D) `vector = {1, 2, 3}`
+- **Answer**: A
+
+  3.How can you create an empty vector?
+
+- A) `vector = {}`
+- B) `vector = []`
+- C) `vector = ()`
+- D) `vector = None`
+
+- **Answer**: B
+
+  4.Which of the following is not a valid way to create a vector?
+
+- A) `vector = [1, 2, 3]`
+- B) `vector = list()`
+- C) `vector = [1; 2; 3]`
+- D) `vector = [x for x in range(5)]`
+
+- **Answer**: C
+
+  5.What will `vector = [1, 2, 3]` return when printed?
+
+- A) `None`
+- B) `[1, 2, 3]`
+- C) `1, 2, 3`
+- D) `Error`
+
+- **Answer**: B
+
+  6.Which method can be used to create a vector from a string?
+
+- A) `split()`
+- B) `join()`
+- C) `append()`
+- D) `extend()`
+
+- **Answer**: A
+
+  7.How do you create a vector with repeated values?
+
+- A) `vector = [0] * 5`
+- B) `vector = repeat(0, 5)`
+- C) `vector = [0, 0, 0, 0, 0]`
+- D) `vector = [0:5]`
+
+- **Answer**: A
+
+  8.Which of the following creates a vector with the first 10 even numbers?
+
+- A) `vector = [x for x in range(10)]`
+- B) `vector = [x * 2 for x in range(10)]`
+- C) `vector = [2, 4, 6, 8, 10]`
+- D) `vector = list(range(0, 20, 2))`
+
+- **Answer**: D
+
+  9.What is the result of `vector = [1, 2, 3]; vector[0]`?
+
+- A) `1`
+- B) `2`
+- C) `3`
+- D) `Error`
+
+- **Answer**: A
+
+  10.How do you create a vector with mixed data types?
+
+- A) `vector = [1, "two", 3.0]`
+- B) `vector = (1, "two", 3.0)`
+- C) `vector = {1, "two", 3.0}`
+- D) `vector = [1; "two"; 3.0]`
+
+- **Answer**: A
+
+## 2. Indexing and Slicing
+
+1.What will `my_list = [1, 2, 3, 4, 5]; my_list[1:4]` return?
+
+- A) `[1, 2, 3]`
+
+- B) `[2, 3, 4]`
+
+- C) `[3, 4, 5]`
+
+- D) `Error`
+
+- **Answer**: B
+
+  2.What does `my_list[-1]` return if `my_list = [1, 2, 3]`?
+
+- A) `1`
+- B) `2`
+- C) `3`
+- D) `Error`
+
+- **Answer**: C
+
+  3.How do you slice the last two elements of a list?
+
+- A) `my_list[-2:]`
+- B) `my_list[2:]`
+- C) `my_list[:2]`
+- D) `my_list[2:-1]`
+
+- **Answer**: A
+
+  4.What will `my_list[1:5:2]` return for `my_list = [0, 1, 2, 3, 4, 5]`?
+
+- A) `[1, 3]`
+- B) `[0, 2, 4]`
+- C) `[1, 2, 3]`
+- D) `[0, 1, 2, 3, 4]`
+
+- **Answer**: A
+
+  5.What will `my_list = [1, 2, 3]; my_list[:2]` return?
+
+- A) `[1, 2]`
+- B) `[2, 3]`
+- C) `[1, 2, 3]`
+- D) `Error`
+
+- **Answer**: A
+
+  6.How do you get the first three elements of a list?
+
+- A) `my_list[0:3]`
+- B) `my_list[:3]`
+- C) Both A and B
+- D) `my_list[3:]`
+
+- **Answer**: C
+
+  7.What does `my_list[::-1]` do?
+
+- A) Returns the list in reverse order
+- B) Returns the original list
+- C) Returns an empty list
+- D) Returns the first element
+
+  - **Answer**: A
+
+  8.What will `my_list[1:3]` return for `my_list = [5, 10, 15, 20]`?
+
+- A) `[10, 15]`
+- B) `[5, 10]`
+- C) `[15, 20]`
+- D) `Error`
+
+- **Answer**: A
+
+  9.If `my_list = [1, 2, 3, 4]`, what does `my_list[1:-1]` return?
+
+- A) `[2, 3]`
+- B) `[1, 2, 3]`
+- C) `[2, 3, 4]`
+- D) `Error`
+
+- **Answer**: A
+
+  10.What will `my_list[::2]` return for `my_list = [0, 1, 2, 3, 4]`?
+
+- A) `[0, 2, 4]`
+- B) `[1, 3]`
+- C) `[0, 1, 2, 3, 4]`
+- D) `Error`
+
+- **Answer**: A
+
+### 3.The len() Function
+
+1.What does the `len()` function do?
+
+- A) Returns the first element of a list
+- B) Returns the length of a list
+- C) Returns the last element of a list
+- D) Returns an error
+
+- **Answer**: B
+
+  2.What will `len([1, 2, 3, 4])` return?
+
+- A) `3`
+- B) `4`
+- C) `5`
+- D) `Error`
+
+- **Answer**: B
+
+  3.If `my_list = []`, what does `len(my_list)` return?
+
+- A) `0`
+- B) `1`
+- C) `Error`
+- D) `None`
+
+- **Answer**: A
+
+  4.What does `len("Hello")` return?
+
+- A) `5`
+- B) `4`
+- C) `Error`
+- D) `None`
+
+- **Answer**: A
+
+  5.For a nested list `my_list = [[1, 2], [3, 4]]`, what does `len(my_list)` return?
+
+- A) `2`
+- B) `4`
+- C) `Error`
+- D) `None`
+
+- **Answer**: A
+
+  6.What will `len([None, None, None])` return?
+
+- A) `0`
+- B) `1`
+- C) `3`
+- D) `Error`
+- **Answer**: C
+
+  7.If `my_list = [1, 2, 3]`, what will `len(my_list) + 1` return?
+
+- A) `3`
+- B) `4`
+- C) `5`
+- D) `Error`
+
+- **Answer**: B
+
+  8.What does `len(range(5))` return?
+
+- A) `4`
+- B) `5`
+- C) `0`
+- D) `Error`
+
+- **Answer**: B
+
+  9.For a string `s = "Python"`, what does `len(s)` return?
+
+- A) `6`
+- B) `5`
+- C) `Error`
+- D) `None`
+
+- **Answer**: A
+
+  10.If `my_list = [1, 2, 3, 4, 5]`, what is the value of `len(my_list) * 2`?
+
+- A) `5`
+- B) `10`
+- C) `15`
+- D) `Error`
+
+- **Answer**: B
+
+`### 4.List Methods: append(), insert(), index(), etc`
+
+1.What does `my_list.append(4)` do?
+
+- A) Adds `4` at the beginning of `my_list`
+- B) Adds `4` at the end of `my_list`
+- C) Replaces the first element with `4`
+- D) Returns an error
+
+- **Answer**: B
+
+  2.What will `my_list.insert(1, 5)` do if `my_list = [1, 2, 3]`?
+
+- A) `[5, 1, 2, 3]`
+- B) `[1, 5, 2, 3]`
+- C) `[1, 2, 3, 5]`
+- D) `Error`
+
+- **Answer**: B
+
+  3.What does `my_list.index(2)` return for `my_list = [1, 2, 3]`?
+
+- A) `1`
+- B) `2`
+- C) `0`
+- D) `Error`
+
+- **Answer**: A
+
+  4.What will happen if you call `my_list.index(5)` when `my_list = [1, 2, 3]`?
+
+- A) `0`
+- B) `Error`
+- C) `-1`
+- D) `None`
+
+- **Answer**: B
+
+  5.What does `my_list.remove(2)` do if `my_list = [1, 2, 3]`?
+
+- A) Removes the first occurrence of `2`
+- B) Removes the last occurrence of `2`
+- C) Returns an error
+- D) Does nothing
+
+- **Answer**: A
+
+  6.What will `my_list.pop()` return for `my_list = [1, 2, 3]`?
+
+- A) `1`
+- B) `2`
+- C) `3`
+- D) `Error`
+
+- **Answer**: C
+
+  7.What does `my_list.clear()` do?
+
+- A) Removes all elements from the list
+- B) Clears the first element
+- C) Returns an empty list
+- D) Does nothing
+
+- **Answer**: A
+
+  8.Which method adds multiple elements to a list?
+
+- A) `append()`
+- B) `insert()`
+- C) `extend()`
+- D) `remove()`
+
+- **Answer**: C
+
+  9.What does `my_list.sort()` do?
+
+- A) Sorts the list in ascending order
+- B) Sorts the list in descending order
+- C) Returns an error
+- D) Does nothing
+
+- **Answer**: A
+
+  10.If `my_list = [3, 1, 2]`, what will `my_list.sort()` return?
+
+- A) `[1, 2, 3]`
+- B) `[3, 2, 1]`
+- C) `Error`
+- D) `[3, 1, 2]`
+
+- **Answer**: A
+
+### 5.Functions: len(), sorted()
+
+1.What does the `sorted()` function do?
+
+- A) Sorts a list in place
+- B) Returns a new sorted list
+- C) Returns an error
+- D) Does nothing
+
+- **Answer**: B
+
+  2.What is the result of `sorted([3, 1, 2])`?
+
+- A) `[3, 1, 2]`
+- B) `[1, 2, 3]`
+- C) `Error`
+- D) `[2, 3, 1]`
+
+- **Answer**: B
+
+  3.How can you sort a list in descending order?
+
+- A) `sorted(my_list, reverse=True)`
+- B) `my_list.sort(reverse=True)`
+- C) Both A and B
+- D) `Error`
+
+- **Answer**: C
+
+  4.If `my_list = [3, 1, 2]`, what does `len(my_list)` return?
+
+- A) `2`
+- B) `3`
+- C) `1`
+- D) `Error`
+
+- **Answer**: B
+
+  5.What will `sorted("hello")` return?
+
+- A) `['e', 'h', 'l', 'l', 'o']`
+- B) `'ehllo'`
+- C) `Error`
+- D) `['h', 'e', 'l', 'o']`
+
+- **Answer**: A
+
+  6.What will `len([1, 2, 3, 4, 5])` return?
+
+- A) `4`
+- B) `5`
+- C) `6`
+- D) `Error`
+
+- **Answer**: B
+
+  7.If `my_list = []`, what does `sorted(my_list)` return?
+
+- A) `[]`
+- B) `None`
+- C) `Error`
+- D) `0`
+
+- **Answer**: A
+
+  8.What does `len("Python3")` return?
+
+- A) `7`
+- B) `6`
+- C) `5`
+- D) `Error`
+
+- **Answer**: A
+
+  9.What will `sorted([5, 3, 1, 4, 2])` return?
+
+- A) `[1, 2, 3, 4, 5]`
+- B) `[5, 4, 3, 2, 1]`
+- C) `Error`
+- D) `[3, 2, 1, 5, 4]`
+
+- **Answer**: A
+
+  10.If `my_list = [3, 1, 2]`, what will `my_list.sort()` return?
+
+- A) `[1, 2, 3]`
+- B) `None`
+- C) `Error`
+- D) `[3, 1, 2]`
+
+- **Answer**: B
+
+### 6.The del Instruction
+
+1.What does `del my_list[0]` do?
+
+- A) Deletes the first element of `my_list`
+- B) Deletes the last element of `my_list`
+- C) Returns an error
+- D) Does nothing
+
+- **Answer**: A
+
+  2.What will happen if you use `del my_list`?
+
+- A) Deletes the list entirely
+- B) Deletes the first element
+- C) Returns an error
+- D) Does nothing
+
+- **Answer**: A
+
+  3.If `my_list = [1, 2, 3]`, what does `del my_list[1]` return?
+
+- A) `2`
+- B) `1`
+- C) `3`
+- D) `Error`
+
+- **Answer**: D
+
+  4.What does `del my_list[1:3]` do?
+
+- A) Deletes the first two elements
+- B) Deletes elements at index 1 and 2
+- C) Deletes the last two elements
+- D) Returns an error
+
+- **Answer**: B
+
+  5.If `my_list = [1, 2, 3]`, what will `del my_list[3]` do?
+
+- A) Deletes `3`
+- B) Returns an error
+- C) Deletes `2`
+- D) Does nothing
+
+- **Answer**: B
+
+  6.What is the effect of `del my_list[:]`?
+
+- A) Deletes all elements from `my_list`
+- B) Clears the first element
+- C) Returns an error
+- D) Does nothing
+
+- **Answer**:
