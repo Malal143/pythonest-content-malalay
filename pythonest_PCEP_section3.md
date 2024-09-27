@@ -1219,302 +1219,105 @@ print(items) # Output: dict_items([('name', 'Alice'), ('gender', 'Female')])
 
 ### multi choice, Question with Answers
 
-1. Dictionaries: Building, Indexing, Adding, and Removing Keys
+1. What method would you use to retrieve all keys from a dictionary?
 
-questions = [
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"print(my_dict['name'])",
-"options": ["A) Alice", "B) 25", "C) KeyError", "D) None"],
-"answer": "A"
-},
-{
-"question": "Which of the following will raise a KeyError?\n"
-"my_dict = {'name': 'Alice'}\n"
-"print(my_dict['age'])",
-"options": ["A) 'name'", "B) 'Alice'", "C) 'age'", "D) None"],
-"answer": "C"
-},
-{
-"question": "What is the correct way to add a new key-value pair?\n"
-"my_dict = {'name': 'Alice'}\n"
-"my_dict[<key>] = <value>",
-"options": ["A) my_dict.add('age', 25)",
-"B) my_dict['age'] = 25",
-"C) my_dict.append('age', 25)",
-"D) my_dict.insert('age', 25)"],
-"answer": "B"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"del my_dict['age']\n"
-"print(my_dict)",
-"options": ["A) {'name': 'Alice'}",
-"B) {'age': 25}",
-"C) KeyError",
-"D) None"],
-"answer": "A"
-},
-{
-"question": "What does the pop() method do?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"my_dict.pop('age')",
-"options": ["A) Removes 'age' and returns its value",
-"B) Removes 'age' without returning",
-"C) Raises KeyError",
-"D) None"],
-"answer": "A"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {1: 'one', 2: 'two'}\n"
-"print(my_dict[1])",
-"options": ["A) 'one'", "B) 'two'", "C) KeyError", "D) None"],
-"answer": "A"
-},
-{
-"question": "Which of the following is the correct way to create an empty dictionary?",
-"options": ["A) empty_dict = {}",
-"B) empty_dict = []",
-"C) empty_dict = dict()",
-"D) Both A and C"],
-"answer": "D"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'a': 1, 'b': 2}\n"
-"print(my_dict.get('c', 'Not Found'))",
-"options": ["A) None",
-"B) 'Not Found'",
-"C) KeyError",
-"D) 'c'"],
-"answer": "B"
-},
-{
-"question": "Which of the following methods removes a key from a dictionary?",
-"options": ["A) remove()",
-"B) delete()",
-"C) pop()",
-"D) discard()"],
-"answer": "C"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"my_dict['age'] = 26\n"
-"print(my_dict)",
-"options": ["A) {'name': 'Alice', 'age': 25}",
-"B) {'name': 'Alice', 'age': 26}",
-"C) KeyError",
-"D) None"],
-"answer": "B"
-}
-]
+A) get_keys()
+B) keys()
+C) all_keys()
+D) retrieve_keys()
 
-### 2.Iterating Through Dictionaries and Their Keys and Values
+Answer: B
 
-questions += [
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"for key in my_dict:\n"
-" print(key)",
-"options": ["A) name age",
-"B) Alice 25",
-"C) name\nage",
-"D) KeyError"],
-"answer": "C"
-},
-{
-"question": "Which method returns a view of all keys in a dictionary?",
-"options": ["A) all_keys()",
-"B) keys()",
-"C) get_keys()",
-"D) list_keys()"],
-"answer": "B"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"for value in my_dict.values():\n"
-" print(value)",
-"options": ["A) Alice 25",
-"B) name age",
-"C) KeyError",
-"D) None"],
-"answer": "A"
-},
-{
-"question": "How do you iterate through key-value pairs in a dictionary?",
-"options": ["A) for key in my_dict.items():",
-"B) for key, value in my_dict:",
-"C) for key, value in my_dict.items():",
-"D) Both A and C"],
-"answer": "D"
-},
-{
-"question": "What will the following code output?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"for item in my_dict.items():\n"
-" print(item)",
-"options": ["A) ('name', 'Alice') ('age', 25)",
-"B) name: Alice age: 25",
-"C) KeyError",
-"D) None"],
-"answer": "A"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"for key in my_dict.keys():\n"
-" print(key)",
-"options": ["A) name age",
-"B) Alice 25",
-"C) KeyError",
-"D) None"],
-"answer": "A"
-},
-{
-"question": "Which of the following correctly checks for the existence of a key?",
-"options": ["A) 'name' in my_dict",
-"B) my_dict.contains('name')",
-"C) my_dict.exists('name')",
-"D) my_dict.has_key('name')"],
-"answer": "A"
-},
-{
-"question": "What does the following code return?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"print(my_dict.get('gender', 'Not Found'))",
-"options": ["A) None",
-"B) Not Found",
-"C) KeyError",
-"D) 'gender'"],
-"answer": "B"
-},
-{
-"question": "Which method is used to get a list of all values in a dictionary?",
-"options": ["A) get_values()",
-"B) values()",
-"C) list_values()",
-"D) all_values()"],
-"answer": "B"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"for key, value in my_dict.items():\n"
-" print(f'{key}: {value}')",
-"options": ["A) name: Alice\nage: 25",
-"B) Alice: name\n25: age",
-"C) KeyError",
-"D) None"],
-"answer": "A"
-}
-]
+2.If you try to access a key that does not exist in a dictionary, what will happen?
 
-### 3. Methods: keys(), items(), and values()
+A) It will return None.
+B) It will raise a KeyError.
+C) It will create a new entry with a default value.
+D) It will return an empty string.
 
-questions += [
-{
-"question": "What does the keys() method return?",
-"options": ["A) List of all keys",
-"B) View of all keys",
-"C) Tuple of all keys",
-"D) None"],
-"answer": "B"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"print(my_dict.keys())",
-"options": ["A) ['name', 'age']",
-"B) dict_keys(['name', 'age'])",
-"C) KeyError",
-"D) None"],
-"answer": "B"
-},
-{
-"question": "What does the values() method return?",
-"options": ["A) List of all values",
-"B) View of all values",
-"C) Tuple of all values",
-"D) None"],
-"answer": "B"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"print(my_dict.values())",
-"options": ["A) ['Alice', 25]",
-"B) dict_values(['Alice', 25])",
-"C) KeyError",
-"D) None"],
-"answer": "B"
-},
-{
-"question": "What does the items() method return?",
-"options": ["A) List of all key-value pairs",
-"B) View of all key-value pairs",
-"C) Tuple of all key-value pairs",
-"D) None"],
-"answer": "B"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"print(my_dict.items())",
-"options": ["A) [('name', 'Alice'), ('age', 25)]",
-"B) dict_items([('name', 'Alice'), ('age', 25)])",
-"C) KeyError",
-"D) None"],
-"answer": "B"
-},
-{
-"question": "Which of the following methods can be used to get both keys and values?",
-"options": ["A) keys()",
-"B) items()",
-"C) values()",
-"D) all()"],
-"answer": "B"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"for item in my_dict.items():\n"
-" print(item)",
-"options": ["A) ('name', 'Alice') ('age', 25)",
-"B) name: Alice age: 25",
-"C) KeyError",
-"D) None"],
-"answer": "A"
-},
-{
-"question": "Which method is used to get a view of the dictionary's items?",
-"options": ["A) items()",
-"B) values()",
-"C) keys()",
-"D) all_items()"],
-"answer": "A"
-},
-{
-"question": "What will be the output of the following code?\n"
-"my_dict = {'name': 'Alice', 'age': 25}\n"
-"print(list(my_dict.items()))",
-"options": ["A) [('name', 'Alice'), ('age', 25)]",
-"B) dict_items([('name', 'Alice'), ('age', 25)])",
-"C) KeyError",
-"D) None"],
-"answer": "A"
-}
-]
+Answer: B
 
-`Print all questions for review`
+3.Which of the following methods would you use to check if a key exists in a dictionary?
 
-for q in questions:
-print(q["question"])
-for option in q["options"]:
-print(option)
-print(f"Answer: {q['answer']}\n")
+A) exists()
+B) has_key()
+C) in
+D) contains()
+
+Answer: C
+
+4.What will be the output of the following code?
+
+```python
+d = {'a': 1, 'b': 2}
+print(d.get('c', 3))
+
+A) None
+B) 3
+C) KeyError
+D) 0
+
+Answer: B
+
+5. How can you remove a key from a dictionary?
+
+A) delete key
+B) remove(key)
+C) del key
+D) discard(key)
+
+Answer: C
+
+6. What does the items() method return?
+
+A) A list of keys only.
+B) A list of values only.
+C) A list of tuples containing key-value pairs.
+D) A dictionary.
+
+Answer: C
+
+7. Which of the following statements correctly adds a new key-value pair to a dictionary?
+
+A) d.add('c', 3)
+B) d['c'] = 3
+C) d.insert('c', 3)
+D) d.append('c', 3)
+
+Answer: B
+
+8. Consider the following code. What will be the output?
+
+d = {'x': 1, 'y': 2}
+for key, value in d.items():
+    print(key, value)
+
+A) x^1
+y^2
+B) 1^x
+2^y
+C) x^y
+1^2
+D) y^x
+2^1
+
+Answer: A
+
+9. What will happen if you call the values() method on a dictionary?
+
+A) It will return a list of keys.
+B) It will return a list of values.
+C) It will return a set of keys and values.
+D) It will return a dictionary.
+
+Answer: B
+
+10. Which of the following is true about dictionary keys in Python?
+
+A) They can be mutable types.
+B) They must be unique.
+C) They can be of any data type.
+D) They cannot be strings.
+
+Answer: B.
+```
