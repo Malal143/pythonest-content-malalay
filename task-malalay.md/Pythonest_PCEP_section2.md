@@ -211,10 +211,10 @@ y = False
 if x:
     if y:
         print("Both True")
-else:
-        print("Only x is True")
-else:
-    print("x is False")
+        else:
+            print("Only x is True")
+            else:
+                print("x is False")
 A. Both True
 B. Only x is True
 C. x is False
@@ -228,10 +228,10 @@ D. No output
 x = 20
 if x > 10:
     print("A")
-elif x > 15:
-    print("B")
-else:
-    print("C")
+    elif x > 15:
+        print("B")
+        else:
+            print("C")
 A. A
 B. B
 C. C
@@ -245,10 +245,10 @@ D. No output
 x = -1
 if x > 0:
     print("Positive")
-elif x < 0:
-    print("Negative")
-else:
-    print("Zero")
+    elif x < 0:
+        print("Negative")
+        else:
+            print("Zero")
 A. It will print "Positive".
 B. It will print "Negative".
 C. It will print "Zero".
@@ -263,11 +263,11 @@ D. It will raise an error.
 x = 10
 y = 20
 if x == 10 and y == 20:
-print("Both are correct")
-elif x == 10 or y == 20:
-print("At least one is correct")
-else:
-print("None are correct")
+    print("Both are correct")
+    elif x == 10 or y == 20:
+        print("At least one is correct")
+        else:
+            print("None are correct")
 A. Both are correct
 B. At least one is correct
 C. None are correct
@@ -284,9 +284,9 @@ The pass statement is a null operation; it does nothing when executed. It's ofte
 
 Example:
 for i in range(5):
-if i == 2:
-pass # Placeholder for future code
-print(i)
+    if i == 2:
+        pass # Placeholder for future code
+        print(i)
 
 ### 2. Building Loops
 
@@ -300,8 +300,8 @@ Example:
 
 count = 0
 while count < 5:
-print(count)
-count += 1
+    print(count)
+    count += 1
 
 #### b. for Loop
 
@@ -310,7 +310,7 @@ A for loop iterates over a sequence (like a list, tuple, or string).
 Example:
 
 for i in range(5):
-print(i)
+    print(i)
 
 ### 3. Iterating Through Sequences
 
@@ -320,7 +320,7 @@ Example:
 
 fruits = ['apple', 'banana', 'cherry']
 for fruit in fruits:
-print(fruit)
+    print(fruit)
 
 ### 4. Expanding Loops with while-else and for-else
 
@@ -329,16 +329,16 @@ Both while and for loops can have an else clause that runs if the loop completes
 Example:
 ```python
 for i in range(3):
-print(i)
-else:
-print("Loop completed without break.")
+    print(i)
+    else:
+        print("Loop completed without break.")
 
 count = 0
 while count < 3:
-print(count)
-count += 1
-else:
-print("While loop completed without break.")
+    print(count)
+    count += 1
+    else:
+        print("While loop completed without break.")
 
 ### 5. Nesting Loops and Conditional Statements
 
@@ -347,11 +347,11 @@ You can nest loops and conditionals to create more complex logic.
 Example:
 
 for i in range(3):
-for j in range(2):
-if i == j:
-print(f"i: {i}, j: {j} - They are equal")
-else:
-print(f"i: {i}, j: {j} - They are not equal")
+    for j in range(2):
+        if i == j:
+            print(f"i: {i}, j: {j} - They are equal")
+            else:
+                print(f"i: {i}, j: {j} - They are not equal")
 
 ### 6. Controlling Loop Execution with break and continue
 
@@ -360,14 +360,12 @@ continue: Skips the current iteration and continues with the next one.
 Example:
 
 for i in range(5):
-if i == 2:
-break # Exit the loop when i is 2
-print(i)
-
-print("-----")
-
-for i in range(5):
-if i == 2:
-continue # Skip the rest of the loop when i is 2
-print(i)
+    if i == 2:
+        break # Exit the loop when i is 2
+        print(i)
+        print("-----")
+        for i in range(5):
+            if i == 2:
+                continue # Skip the rest of the loop when i is 2
+                print(i)
 ````
