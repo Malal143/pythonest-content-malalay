@@ -1292,14 +1292,14 @@ d = {'x': 1, 'y': 2}
 for key, value in d.items():
     print(key, value)
 
-A) x^1
-y^2
-B) 1^x
-2^y
-C) x^y
-1^2
-D) y^x
-2^1
+A) x 1
+y 2
+B) 1 x
+2 y
+C) x y
+1 2
+D) y x
+2 1
 
 Answer: A
 
