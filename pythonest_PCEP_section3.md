@@ -750,4 +750,4 @@ my_list = [(1, 2), (3, 4)]
 print(my_list[0]) # Output: (1, 2)
 print(my_list[1][0]) # Output: 3
 
-Accessing Tuples: You can access tuples within a list just like any other list element.
+- Accessing Tuples: You can access tuples within a list just like any other list element.
