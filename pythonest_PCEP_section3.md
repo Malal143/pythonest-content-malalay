@@ -103,12 +103,15 @@ matrix = [
 [7, 8, 9]
 ]
 
-`# Acessing elements in a matrix`
+# Acessing elements in a matrix
 
 element = matrix[1][2] # 6
 
+```
+
 #### Cube (3D list)
 
+```python
 cube = [
 
 [
