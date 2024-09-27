@@ -381,6 +381,7 @@ print(fruit[0])
 - B. It executes when the loop completes normally without hitting a break.
 - C. It executes for every iteration of the loop.
 - D. It has no effect.
+
   **Answer:** B
 
 ## 5. Nesting Loops and Conditional Statements
@@ -396,6 +397,7 @@ print(i, j)
 - B. (0, 0) (1, 1)
 - C. (0, 0) (1, 1) (2, 2) (2, 2)
 - D. No output
+
   **Answer:** B
 
 ## 6. Controlling Loop Execution with break
@@ -411,6 +413,7 @@ print(i)
 - B. 0 1 2
 - C. 1 2 3
 - D. 0 1 2 3 4
+
   **Answer:** B
 
 ## 7. Controlling Loop Execution with continue
@@ -426,6 +429,7 @@ print(i)
 - B. 0 1 3 4
 - C. 0 1 2 3
 - D. 1 2 3 4
+
   **Answer:** B
 
 ## 8. Using range()
@@ -439,6 +443,7 @@ print(i, end=' ')
 - B. 1 3 5 7 9
 - C. 1 2 3 4 5 6 7 8 9
 - D. 1 2 3 4 5 6 7 8
+
   **Answer:** B
 
 ### 9. Nested Loops
@@ -453,6 +458,7 @@ print("Hello")
 - B. 3
 - C. 5
 - D. 6
+
   **Answer:** D
 
 ### 10. Using for with in
@@ -463,4 +469,5 @@ print("Hello")
 - B. It can only iterate over lists.
 - C. It cannot be used with strings.
 - D. It requires a counter variable.
+
   **Answer:** A
