@@ -111,3 +111,182 @@ def factorial(n):
 
 print(factorial(5)) # Output: 120
 ```
+
+### Question with Answers
+
+#### 1.Defining and Invoking User-Defined Functions
+
+Q1: What will be the output of the following code?
+
+```python
+def func(x):
+    return x + 1
+
+print(func(5))
+
+A) 5
+
+B) 6
+
+C) None
+
+D) Error
+
+Answer: B
+
+```
+
+Q2: Which of the following is a valid way to define a function in Python?
+
+A) function myFunc() {}
+
+B) def myFunc():
+
+C) myFunc() => {}
+
+D) myFunc := function()
+
+Answer: B
+
+#### 2.Generators
+
+Q3: What will the following code output?
+
+```python
+def my_gen():
+    yield 1
+    yield 2
+
+gen = my_gen()
+print(next(gen))
+print(next(gen))
+
+A) 1 2
+
+B) 1 then 2
+
+C) 2 then 1
+
+D) Error
+
+Answer: B
+
+Q4: How can you convert a generator to a list?
+
+A) list(gen)
+
+B) gen.to_list()
+
+C) gen.list()
+
+D) convert(gen)
+
+Answer: A
+
+```
+
+#### 3.The return Keyword
+
+Q5: What will be the output of the following code?
+
+```python
+def test():
+    return
+
+result = test()
+print(result)
+
+A) None
+
+B) 0
+
+C) Error
+
+D) ""
+
+Answer: A
+
+Q6: Which of the following statements is true about the return statement in Python?
+
+A) A function can have multiple return statements, but only one will execute.
+
+B) A function can return multiple values, but they must be of the same type.
+
+C) The return statement can only return integers.
+
+D) None of the above.
+
+Answer: A
+
+```
+
+#### 4.The None Keyword
+
+Q7: What does the expression x is None check?
+
+A) If x is equal to 0
+
+B) If x is an empty string
+
+C) If x is not defined
+
+D) If x has no value assigned
+
+Answer: D) If x has no value assigned
+
+Q8: What will the following code output?
+
+```python
+def no_return():
+    pass
+
+result = no_return()
+print(result)
+
+A) None
+
+B) 0
+
+C) ""
+
+D) Error
+
+Answer: A
+
+```
+
+#### 5. Recursion
+
+Q9: What will be the output of the following code?
+
+```python
+def recursive_function(n):
+    if n == 0:
+        return 1
+    return n * recursive_function(n - 1)
+
+print(recursive_function(4))
+
+A) 4
+
+B) 24
+
+C) 16
+
+D) Error
+
+Answer: B) 24
+
+
+Q10: Which of the following statements about recursion is false?
+
+A) Recursion can lead to infinite loops without a base case.
+
+B) Recursive functions can always be replaced with iterative solutions.
+
+C) Recursion can consume more memory than iterative solutions.
+
+D) Recursion is always more efficient than iteration.
+
+Answer: D
+```
