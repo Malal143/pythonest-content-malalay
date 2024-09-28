@@ -316,6 +316,7 @@ def add(a, b):
 return a + b
 
 result = add(2, 3) # 2 is assigned to 'a', 3 to 'b'
+
 ```
 
 **Keyword Arguments:**
@@ -328,8 +329,8 @@ def display_info(name, age):
 print(f"{name} is {age} years old.")
 
 display_info(age=30, name="Bob") # Order doesn't matter
-```
 
+```
 **Mixed Argument Passing**
 You can combine positional and keyword arguments, but positional arguments must come first.
 
