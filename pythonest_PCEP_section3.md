@@ -1339,6 +1339,7 @@ multi-line string."""
 
 Strings in Python are indexed, meaning each character in a string has a position (index) starting from 0. You can access individual characters using their index:
 
+```python
 my_string = "Python"
 print(my_string[0]) # Output: P
 print(my_string[5]) # Output: n
@@ -1366,6 +1367,7 @@ original_string = "Hello"
 new_string = original_string.replace("H", "J") # Creates a new string
 print(original_string) # Output: Hello
 print(new_string) # Output: Jello
+```
 
 ### 5. Escaping Using the \ Character
 
@@ -1395,6 +1397,7 @@ Python provides several built-in functions and methods to operate on strings:
 
 - len(): Returns the length of the string.
 
+```python
 my_string = "Hello"
 print(len(my_string)) # Output: 5
 
@@ -1424,3 +1427,4 @@ print(sentence.split()) # Output: ['Python', 'is', 'fun']
 
 words = ['Python', 'is', 'awesome']
 print(" ".join(words)) # Output: Python is awesome
+```
