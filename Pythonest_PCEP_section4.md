@@ -414,3 +414,175 @@ x = 5 # Modify global variable
 modify_global()
 print(x) # Output: 5
 ```
+
+### Questions
+
+Q1: Which of the following statements about parameters and arguments is true?
+
+A) Parameters are the values passed to functions, while arguments are the placeholders in the function definition.
+
+B) Parameters are defined in the function, while arguments are the values supplied during a function call.
+
+C) Parameters can only be integers, while arguments can be of any type.
+
+D) There is no difference between parameters and arguments.
+
+Answer: B
+
+Q2: What will be the output of the following code?
+
+```python
+def func(a, b):
+    return a + b
+
+print(func(1, 2))
+
+A) 3
+
+B) 12
+
+C) None
+
+D) Error
+
+Answer: A
+```
+
+Q3: What will the following code output?
+
+```python
+def multiply(x, y=2):
+    return x * y
+
+print(multiply(5))
+
+A) 5
+
+B) 10
+
+C) 7
+
+D) Error
+
+Answer: B
+```
+
+Q4: Which of the following function calls is valid?
+
+```python
+def func(a, b, c=5):
+    return a + b + c
+
+A) func(1, 2)
+
+B) func(1, b=2)
+
+C) func(a=1, 2)
+
+D) func(1, 2, 3, 4)
+
+Answer: A
+```
+
+Q5: What happens if you call the following function without providing the second argument?
+
+```python
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+print(greet("Alice"))
+
+A) Hello, Alice!
+
+B) None
+
+C) Error
+
+D) Alice!
+
+Answer: A
+```
+
+Q6: Which of the following statements is true regarding default parameter values?
+
+A) Default values must be immutable types.
+
+B) Default values are evaluated at function definition time, not at call time.
+
+C) You can only have one default parameter in a function.
+
+D) Default values can only be numbers.
+
+Answer: B
+
+Q7: What will the following code output?
+
+```python
+x = 10
+
+def func():
+    x = 5
+    def inner_func():
+        return x
+    return inner_func()
+
+print(func())
+
+A) 10
+
+B) 5
+
+C) None
+
+D) Error
+
+Answer: B
+```
+
+Q8: Which of the following scopes has the highest precedence in Python?
+
+A) Local Scope
+
+B) Enclosing Scope
+
+C) Global Scope
+
+D) Built-in Scope
+
+Answer: A
+
+Q9: In the following code, what will be printed?
+
+```python
+x = 20
+
+def func():
+    x = 10
+    print(x)
+
+func()
+print(x)
+
+A) 10 then 20
+
+B) 20 then 10
+
+C) 10
+
+D) Error
+
+Answer: A
+
+```
+
+Q10: Which statement about name hiding (shadowing) is false?
+
+A) A local variable can shadow a global variable.
+
+B) Shadowing can lead to confusion in code.
+
+C) Shadowed global variables can be accessed without the global keyword.
+
+D) Shadowing is a common practice in programming.
+
+Answer: C
