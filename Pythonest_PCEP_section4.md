@@ -393,12 +393,17 @@ x = 5 # Local variable (shadows global)
 print(x)
 
 my_function() # Output: 5
-print(x) # Output: 10 6. The Global Keyword
+print(x) # Output: 10
+
+```
+
+### 6. The Global Keyword
+
 The global keyword allows you to modify a global variable inside a function. Without using global, Python treats any variable assignment inside a function as local to that function.
 
-Example:
+**Example**:
 
-Copy
+```python
 x = 10
 
 def modify_global():
@@ -407,9 +412,4 @@ x = 5 # Modify global variable
 
 modify_global()
 print(x) # Output: 5
-
-```
-
-```
-
 ```
