@@ -1464,3 +1464,161 @@ print(sentence.split()) # Output: ['Python', 'is', 'fun']
 words = ['Python', 'is', 'awesome']
 print(" ".join(words)) # Output: Python is awesome
 ```
+
+### Questions with Answers
+
+#### 1.Constructing Strings
+
+Q1: Which of the following is a valid way to create a string in Python?
+
+`A) str = "Hello"`
+`B) str = 'Hello'`
+`C) str = '''Hello'''`
+D) All of the above
+
+Answer: D
+
+Q2: What will be the output of the following code?
+
+```python
+s = "Hello" + " World"
+print(s)
+A) HelloWorld
+B) Hello World
+C) Hello + World
+D) Hello, World
+
+Answer: B
+
+```
+
+#### 2. Indexing, Slicing, Immutability
+
+Q3: What will s[1] return if s = "Python"?
+
+A) P
+B) y
+C) o
+D) n
+
+Answer: B
+
+Q4: What will be the result of the following code?
+
+s = "Immutable"
+s[0] = 'i'
+A) iImmutable
+B) Immutable
+C) Error
+D) Immutabl
+
+Answer: C
+
+#### 3. Escaping Using the \ Character
+
+Q5: Which of the following strings contains an escape character?
+
+A) "Hello"
+B) "Hello\nWorld
+C) "Hello World"
+D) "'Hello'"
+
+Answer: B
+
+Q6: What will be the output of the following code?
+
+print("She said, \"Hello!\"")
+A) She said, "Hello!"
+
+B) She said, Hello!
+
+C) She said, \"Hello!\"
+
+D) Error
+
+Answer: A) She said, "Hello!"
+
+4. Quotes and Apostrophes Inside Strings
+   Q7: How can you include a single quote in a string that is defined with single quotes?
+
+A) s = 'It\'s a nice day'
+
+B) s = 'It’s a nice day'
+
+C) s = "It's a nice day"
+
+D) Both A and C
+
+Answer: D) Both A and C
+
+Q8: What will be the output of the following code?
+
+Copy
+s = 'He said, "It\'s fine."'
+print(s)
+A) He said, "It's fine."
+
+B) He said, "It\'s fine."
+
+C) He said, "Its fine."
+
+D) Error
+
+Answer: A) He said, "It's fine."
+
+5. Multi-line Strings
+   Q9: Which of the following is a valid multi-line string?
+
+A) s = "Hello\nWorld"
+
+B) s = '''Hello\nWorld'''
+
+C) s = "Hello World"
+
+D) s = """Hello World"""
+
+Answer: D) s = """Hello World"""
+
+Q10: What will the output of the following code be?
+
+Copy
+s = """Line 1
+Line 2"""
+print(s)
+A) Line 1 Line 2
+
+B) Line 1\nLine 2
+
+C) Line 1\nLine 2\n
+
+D) Line 1\nLine 2
+
+Answer: C) Line 1\nLine 2\n
+
+6. Basic String Functions and Methods
+   Q11: What does the method s.lower() do?
+
+A) Converts all characters in string s to uppercase
+
+B) Converts all characters in string s to lowercase
+
+C) Returns the original string
+
+D) None of the above
+
+Answer: B) Converts all characters in string s to lowercase
+
+Q12: What will be the result of the following code?
+
+Copy
+s = "Python"
+print(s.replace("P", "J"))
+A) Jython
+
+B) Python
+
+C) Pjthon
+
+D) JytHon
+
+Answer: A) Jython
