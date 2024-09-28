@@ -64,7 +64,7 @@ Example:
 
 ```python
 def add_and_subtract(a, b):
-return a + b, a - b
+    return a + b, a - b
 
 result = add_and_subtract(5, 3)
 print(result) # Output: (8, 2)
@@ -80,10 +80,10 @@ Example:
 
 ```python
 def do_nothing():
-pass
+    pass
 
-result = do_nothing()
-print(result) # Output: None
+    result = do_nothing()
+    print(result) # Output: None
 
 ```
 
@@ -97,10 +97,10 @@ Here’s a simple example of a recursive function that calculates the factorial 
 
 ```python
 def factorial(n):
-if n == 0: # Base case
-return 1
-else:
-return n \* factorial(n - 1) # Recursive case
+    if n == 0: # Base case
+    return 1
+    else:
+        return n \* factorial(n - 1) # Recursive case
 
 print(factorial(5)) # Output: 120
 ```
