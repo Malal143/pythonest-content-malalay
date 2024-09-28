@@ -123,6 +123,7 @@ def func(x):
     return x + 1
 
 print(func(5))
+```
 
 A) 5
 
@@ -133,8 +134,6 @@ C) None
 D) Error
 
 Answer: B
-
-```
 
 Q2: Which of the following is a valid way to define a function in Python?
 
@@ -160,6 +159,7 @@ def my_gen():
 gen = my_gen()
 print(next(gen))
 print(next(gen))
+```
 
 A) 1 2
 
@@ -183,8 +183,6 @@ D) convert(gen)
 
 Answer: A
 
-```
-
 #### 3.The return Keyword
 
 Q5: What will be the output of the following code?
@@ -195,6 +193,7 @@ def test():
 
 result = test()
 print(result)
+```
 
 A) None
 
@@ -218,8 +217,6 @@ D) None of the above.
 
 Answer: A
 
-```
-
 #### 4.The None Keyword
 
 Q7: What does the expression x is None check?
@@ -232,7 +229,7 @@ C) If x is not defined
 
 D) If x has no value assigned
 
-Answer: D) If x has no value assigned
+Answer: D
 
 Q8: What will the following code output?
 
@@ -242,6 +239,7 @@ def no_return():
 
 result = no_return()
 print(result)
+```
 
 A) None
 
@@ -253,9 +251,7 @@ D) Error
 
 Answer: A
 
-```
-
-#### 5. Recursion
+#### 5.Recursion
 
 Q9: What will be the output of the following code?
 
@@ -266,6 +262,7 @@ def recursive_function(n):
     return n * recursive_function(n - 1)
 
 print(recursive_function(4))
+```
 
 A) 4
 
@@ -276,7 +273,6 @@ C) 16
 D) Error
 
 Answer: B) 24
-
 
 Q10: Which of the following statements about recursion is false?
 
@@ -289,4 +285,3 @@ C) Recursion can consume more memory than iterative solutions.
 D) Recursion is always more efficient than iteration.
 
 Answer: D
-```
