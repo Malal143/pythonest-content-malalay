@@ -285,3 +285,131 @@ C) Recursion can consume more memory than iterative solutions.
 D) Recursion is always more efficient than iteration.
 
 Answer: D
+
+## PCEP-30-02 4.2 – Organize interaction between the function and its environment
+
+### 1. Parameters vs. Arguments
+
+**Parameters** are variables defined in a function's declaration that accept values when the function is called. They act as placeholders for the values that will be passed into the function.
+
+**Arguments**, on the other hand, are the actual values or data you pass into the function when you call it.
+
+**Example:**
+
+```python
+def greet(name): # 'name' is a parameter
+print(f"Hello, {name}!")
+
+greet("Alice") # "Alice" is an argument
+
+```
+
+### 2. Positional, Keyword, and Mixed Argument Passing
+
+**Positional Arguments:**
+are passed to a function in the order that the parameters are defined. The first argument corresponds to the first parameter, the second to the second, and so on.
+
+**Example:**
+
+```python
+def add(a, b):
+return a + b
+
+result = add(2, 3) # 2 is assigned to 'a', 3 to 'b'
+```
+
+**Keyword Arguments:**
+Are passed to a function by explicitly stating the parameter name and its value. This allows you to skip arguments or pass them in a different order.
+
+**Example:**
+
+````python
+def display_info(name, age):
+print(f"{name} is {age} years old.")
+
+display_info(age=30, name="Bob") # Order doesn't matter
+
+**Mixed Argument Passing**
+You can combine positional and keyword arguments, but positional arguments must come first.
+
+**Example:**
+
+```python
+def info(name, age, country="USA"):
+print(f"{name} is {age} years old and lives in {country}.")
+
+info("Alice", 25) # Uses default for country
+info("Bob", 30, country="Canada") # Overrides default
+````
+
+### 3. Default Parameter Values
+
+Default parameter values allow you to define a parameter with a default value that will be used if no argument is provided for that parameter.
+
+Example:
+
+```python
+def power(base, exponent=2):
+return base \*\* exponent
+
+print(power(3)) # Output: 9 (3^2)
+print(power(3, 3)) # Output: 27 (3^3)
+```
+
+### 4. Name Scopes
+
+N**ame Scope** refers to the region of a program where a name (variable, function, etc.) is accessible. Python has several scopes:
+
+- Local Scope: Names defined within a function are local to that function.
+- Enclosing Scope: Names in the local scope of enclosing functions (if any).
+- Global Scope: Names defined at the top level of a module or script.
+- Built-in Scope: Names pre-defined in Python (like len()).
+
+**Example:**
+
+```python
+x = 10 # Global variable
+
+def my_function():
+x = 5 # Local variable
+print(x)
+
+my_function() # Output: 5
+print(x) # Output: 10
+
+```
+
+### 5. Name Hiding (Shadowing)
+
+Name hiding occurs when a local variable has the same name as a global variable. In this case, the local variable "shadows" the global variable within its scope.
+
+Example:
+
+```python
+x = 10 # Global variable
+
+def my_function():
+x = 5 # Local variable (shadows global)
+print(x)
+
+my_function() # Output: 5
+print(x) # Output: 10 6. The Global Keyword
+The global keyword allows you to modify a global variable inside a function. Without using global, Python treats any variable assignment inside a function as local to that function.
+
+Example:
+
+Copy
+x = 10
+
+def modify_global():
+global x # Declare x as global
+x = 5 # Modify global variable
+
+modify_global()
+print(x) # Output: 5
+
+```
+
+```
+
+```
