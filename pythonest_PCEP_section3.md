@@ -1373,22 +1373,25 @@ print(new_string) # Output: Jello
 
 To include special characters (like quotes) within a string, you can use the backslash `(\)` to escape them:
 
+```python
 escaped_single_quote = 'It\'s a sunny day.'
 escaped_double_quote = "She said, \"Hello!\""
+```
 
 ### 6. Quotes and Apostrophes Inside Strings
 
 You can use different types of quotes to include quotes or apostrophes without escaping:
 
+```python
 quote_string = "He said, 'Python is great!'"
 apostrophe_string = 'It\'s a beautiful day.'
+```
 
 ### 7. Multi-line Strings
 
 Multi-line strings can be created using triple quotes. This is useful for long texts or documentation:
 
-multi_line_string = """This is a string
-that spans multiple lines.
+multi_line_string = """This is a string that spans multiple lines.
 It can contain both single ' and double " quotes."""
 
 ### 8. Basic String Functions and Methods
