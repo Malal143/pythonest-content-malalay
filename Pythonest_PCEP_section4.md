@@ -586,3 +586,5 @@ C) Shadowed global variables can be accessed without the global keyword.
 D) Shadowing is a common practice in programming.
 
 Answer: C
+
+## PCEP-30-02 4.3 – Python Built-In Exceptions Hierarchy
