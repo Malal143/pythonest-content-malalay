@@ -1505,6 +1505,7 @@ Answer: B
 
 Q4: What will be the result of the following code?
 
+```python
 s = "Immutable"
 s[0] = 'i'
 A) iImmutable
@@ -1513,6 +1514,7 @@ C) Error
 D) Immutabl
 
 Answer: C
+```
 
 #### 3. Escaping Using the \ Character
 
@@ -1527,98 +1529,87 @@ Answer: B
 
 Q6: What will be the output of the following code?
 
+```python
 print("She said, \"Hello!\"")
 A) She said, "Hello!"
-
 B) She said, Hello!
-
 C) She said, \"Hello!\"
-
 D) Error
 
-Answer: A) She said, "Hello!"
+Answer: A
 
-4. Quotes and Apostrophes Inside Strings
-   Q7: How can you include a single quote in a string that is defined with single quotes?
+```
+
+#### 4. Quotes and Apostrophes Inside Strings
+
+Q7: How can you include a single quote in a string that is defined with single quotes?
 
 A) s = 'It\'s a nice day'
-
 B) s = 'It’s a nice day'
-
 C) s = "It's a nice day"
-
 D) Both A and C
 
-Answer: D) Both A and C
+Answer: D
 
 Q8: What will be the output of the following code?
 
-Copy
+```python
 s = 'He said, "It\'s fine."'
 print(s)
 A) He said, "It's fine."
-
 B) He said, "It\'s fine."
-
 C) He said, "Its fine."
-
 D) Error
 
-Answer: A) He said, "It's fine."
+Answer: A
 
-5. Multi-line Strings
-   Q9: Which of the following is a valid multi-line string?
+```
 
+#### 5. Multi-line Strings
+
+Q9: Which of the following is a valid multi-line string?
+
+```python
 A) s = "Hello\nWorld"
-
 B) s = '''Hello\nWorld'''
-
 C) s = "Hello World"
-
 D) s = """Hello World"""
 
-Answer: D) s = """Hello World"""
+Answer: D
 
 Q10: What will the output of the following code be?
 
-Copy
 s = """Line 1
 Line 2"""
 print(s)
 A) Line 1 Line 2
-
 B) Line 1\nLine 2
-
 C) Line 1\nLine 2\n
-
 D) Line 1\nLine 2
 
-Answer: C) Line 1\nLine 2\n
+Answer: C
+```
 
-6. Basic String Functions and Methods
-   Q11: What does the method s.lower() do?
+#### 6. Basic String Functions and Methods
+
+Q11: What does the method s.lower() do?
 
 A) Converts all characters in string s to uppercase
-
 B) Converts all characters in string s to lowercase
-
 C) Returns the original string
-
 D) None of the above
 
-Answer: B) Converts all characters in string s to lowercase
+Answer: B
 
 Q12: What will be the result of the following code?
 
-Copy
+```python
 s = "Python"
 print(s.replace("P", "J"))
 A) Jython
-
 B) Python
-
 C) Pjthon
-
 D) JytHon
 
-Answer: A) Jython
+Answer: A
+```
