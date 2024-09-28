@@ -667,3 +667,213 @@ _Example:_
 ```python
 int("abc")  # Raises ValueError
 ```
+
+### Questions with answer
+
+Q1: Which of the following exceptions is raised when trying to access an index that is out of range in a list?
+
+A) KeyError
+
+B) IndexError
+
+C) ValueError
+
+D) TypeError
+
+Answer: B
+
+Q2: What is the time complexity of accessing an element in a dictionary by key?
+
+A) O(n)
+
+B) O(log n)
+
+C) O(1)
+
+D) O(n^2)
+
+Answer: C
+
+Q3: What will the following code output?
+
+```python
+try:
+    x = int("abc")
+except ValueError:
+    print("Caught ValueError!")
+
+A) Caught ValueError!
+
+B) None
+
+C) 0
+
+D) Error
+
+Answer: A
+
+```
+
+Q4: Which data structure is best suited for implementing a priority queue?
+
+A) List
+
+B) Dictionary
+
+C) Heap
+
+D) Set
+
+Answer: C
+
+Q5: What is the time complexity of binary search on a sorted array?
+
+A) O(n)
+
+B) O(log n)
+
+C) O(n log n)
+
+D) O(1)
+
+Answer: B
+
+Q6: Which of the following is a characteristic of a stack?
+
+A) FIFO (First In, First Out)
+
+B) LIFO (Last In, First Out)
+
+C) Random access
+
+D) Sorted order
+
+Answer: B
+
+Q7: Which of the following exceptions is raised when a division by zero occurs?
+
+A) ArithmeticError
+
+B) ZeroDivisionError
+
+C) ValueError
+
+D) Exception
+
+Answer: B
+
+Q8: What is the output of the following code?
+
+````python
+my_list = [1, 2, 3]
+my_list.append([4, 5])
+print(len(my_list))
+
+A) 5
+
+B) 4
+
+C) 3
+
+D) Error
+
+Answer: B
+
+Q9: Which sorting algorithm has the worst-case time complexity of O(n^2)?
+
+A) Merge Sort
+
+B) Quick Sort
+
+C) Bubble Sort
+
+D) Heap Sort
+
+Answer: C
+
+Q10: What will the following code output?
+
+```python
+my_dict = {'a': 1, 'b': 2}
+print(my_dict.get('c', 3))
+
+A) None
+
+B) 2
+
+C) 3
+
+D) Error
+
+Answer: C
+````
+
+Q11: Which of the following is NOT a built-in exception in Python?
+
+A) MemoryError
+
+B) SyntaxError
+
+C) FileNotFoundError
+
+D) NetworkError
+
+Answer: D
+
+Q12: What is the primary characteristic of a linked list?
+
+A) Random access
+
+B) Dynamic size
+
+C) Fixed size
+
+D) Ordered elements
+
+Answer: B
+
+Q13: What is the space complexity of the recursive implementation of Fibonacci?
+
+A) O(1)
+
+B) O(n)
+
+C) O(n^2)
+
+D) O(log n)
+
+Answer: B
+
+Q14: What will the following code output?
+
+```python
+def func():
+    return 1 / 0
+
+try:
+    func()
+except (ArithmeticError, ZeroDivisionError):
+    print("Caught an arithmetic error!")
+
+A) Caught an arithmetic error!
+
+B) ZeroDivisionError
+
+C) None
+
+D) Error
+
+Answer: A
+
+Q15: Which data structure allows duplicate elements?
+
+A) Set
+
+B) Dictionary
+
+C) List
+
+D) All of the above
+
+Answer: C
+```
