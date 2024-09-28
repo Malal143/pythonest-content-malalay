@@ -1326,8 +1326,9 @@ Answer: B.
 
 ### 1. Constructing Strings
 
-Strings in Python can be created using single quotes `(')`, double quotes `(")`, triple single quotes `(''')`, or triple double quotes `(""")`. Here are some examples:
+- Strings in Python can be created using single quotes `(')`, double quotes `(")`, triple single quotes `(''')`, or triple double quotes `(""")`. Here are some examples:
 
+```python
 single_quote_string = 'Hello, World!'
 double_quote_string = "Hello, World!"
 triple_single_quote_string = '''This is a
@@ -1335,34 +1336,45 @@ multi-line string.'''
 triple_double_quote_string = """This is also a
 multi-line string."""
 
+```
+
 ### 2. Indexing
 
-Strings in Python are indexed, meaning each character in a string has a position (index) starting from 0. You can access individual characters using their index:
+- Strings in Python are indexed, meaning each character in a string has a position (index) starting from 0. You can access individual characters using their index:
 
 ```python
 my_string = "Python"
 print(my_string[0]) # Output: P
 print(my_string[5]) # Output: n
 
-Negative indexing allows you to access characters from the end of the string:
+```
 
+- Negative indexing allows you to access characters from the end of the string:
+
+```python
 print(my_string[-1]) # Output: n
 print(my_string[-2]) # Output: o
 
+```
+
 ### 3. Slicing
 
-Slicing allows you to extract a portion of a string by specifying a start index and an end index. The syntax is `string[start:end]`.
+- Slicing allows you to extract a portion of a string by specifying a start index and an end index. The syntax is `string[start:end]`.
 
+```python
 my_string = "Hello, World!"
 print(my_string[0:5]) # Output: Hello
 print(my_string[7:]) # Output: World!
 print(my_string[:5]) # Output: Hello
 print(my_string[-6:]) # Output: World!
 
+```
+
 ### 4. Immutability
 
-Strings in Python are immutable, meaning once a string is created, it cannot be changed. Any operation that modifies a string will create a new string instead of altering the original. For example:
+- Strings in Python are immutable, meaning once a string is created, it cannot be changed. Any operation that modifies a string will create a new string instead of altering the original. For example:
 
+```python
 original_string = "Hello"
 new_string = original_string.replace("H", "J") # Creates a new string
 print(original_string) # Output: Hello
@@ -1371,7 +1383,7 @@ print(new_string) # Output: Jello
 
 ### 5. Escaping Using the \ Character
 
-To include special characters (like quotes) within a string, you can use the backslash `(\)` to escape them:
+- To include special characters (like quotes) within a string, you can use the backslash `(\)` to escape them:
 
 ```python
 escaped_single_quote = 'It\'s a sunny day.'
@@ -1380,7 +1392,7 @@ escaped_double_quote = "She said, \"Hello!\""
 
 ### 6. Quotes and Apostrophes Inside Strings
 
-You can use different types of quotes to include quotes or apostrophes without escaping:
+- You can use different types of quotes to include quotes or apostrophes without escaping:
 
 ```python
 quote_string = "He said, 'Python is great!'"
@@ -1389,10 +1401,13 @@ apostrophe_string = 'It\'s a beautiful day.'
 
 ### 7. Multi-line Strings
 
-Multi-line strings can be created using triple quotes. This is useful for long texts or documentation:
+- Multi-line strings can be created using triple quotes. This is useful for long texts or documentation:
 
+```python
 multi_line_string = """This is a string that spans multiple lines.
 It can contain both single ' and double " quotes."""
+
+```
 
 ### 8. Basic String Functions and Methods
 
@@ -1404,30 +1419,48 @@ Python provides several built-in functions and methods to operate on strings:
 my_string = "Hello"
 print(len(my_string)) # Output: 5
 
+```
+
 - str.lower(): Converts the string to lowercase.
 
+```python
 print(my_string.lower()) # Output: hello
+
+```
 
 - str.upper(): Converts the string to uppercase.
 
+```python
 print(my_string.upper()) # Output: HELLO
+
+```
 
 - str.strip(): Removes leading and trailing whitespace.
 
+```python
 whitespace_string = " Hello "
 print(whitespace_string.strip()) # Output: Hello
 
+```
+
 - str.replace(old, new): Replaces occurrences of a substring.
 
+```python
 print(my_string.replace("H", "J")) # Output: Jello
+
+```
 
 - str.split(separator): Splits the string into a list based on the separator.
 
+```python
 sentence = "Python is fun"
 print(sentence.split()) # Output: ['Python', 'is', 'fun']
 
+```
+
 - str.join(iterable): Joins elements of an iterable into a single string.
 
+```python
 words = ['Python', 'is', 'awesome']
 print(" ".join(words)) # Output: Python is awesome
 ```
