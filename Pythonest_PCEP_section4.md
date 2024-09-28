@@ -588,3 +588,82 @@ D) Shadowing is a common practice in programming.
 Answer: C
 
 ## PCEP-30-02 4.3 – Python Built-In Exceptions Hierarchy
+
+### 1. BaseException
+
+_Definition:_ BaseException is the root class for all exceptions in Python. It is the superclass of all built-in exceptions.
+*Purpose: *It is primarily used to catch all exceptions. However, it is not recommended to catch BaseException directly, as it also includes system-exiting exceptions like SystemExit and KeyboardInterrupt.
+
+### 2. Exception
+
+_Definition:_ Exception is a subclass of BaseException and is the base class for all non-exiting exceptions. Most user-defined exceptions should inherit from this class.
+_Purpose:_ It provides a way to catch most exceptions without inadvertently catching system-exiting exceptions.
+
+### 3. SystemExit
+
+_Definition:_ SystemExit is raised by the sys.exit() function. It is a subclass of BaseException.
+*Purpose: *It is used to exit the interpreter. Catching this exception will prevent the interpreter from exiting, which is usually not desired.
+
+### 4. KeyboardInterrupt
+
+_Definition:_ KeyboardInterrupt is raised when the user interrupts program execution, typically by pressing Ctrl+C.
+_Purpose:_ It allows the program to handle user interruptions gracefully.
+
+### 5. Abstract Exceptions
+
+_Definition:_ Abstract exceptions are exceptions that are not intended to be raised directly. They serve as base classes for other exceptions.
+_Examples:_ LookupError, ArithmeticError, etc. These are used to group related exceptions.
+
+### 6. ArithmeticError
+
+_Definition:_ ArithmeticError is the base class for exceptions that occur for numeric calculations.
+Subclasses include:
+_ZeroDivisionError:_ Raised when dividing by zero.
+_OverflowError:_ Raised when a calculation exceeds the maximum limit for a numeric type.
+_FloatingPointError_: Raised when a floating-point operation fails.
+
+### 7. LookupError
+
+_Definition:_ LookupError is the base class for exceptions raised when a key or index used on a mapping or sequence is invalid.
+Subclasses include:
+_IndexError:_ Raised when trying to access an index that is out of range in a list or tuple.
+_KeyError:_ Raised when trying to access a dictionary with a key that doesn’t exist.
+
+### 8. IndexError
+
+_Definition:_ IndexError is raised when an index is not found in a sequence (like a list or tuple).
+_Example:_
+
+```python
+my_list = [1, 2, 3]
+print(my_list[5])  # Raises IndexError
+```
+
+### 9. KeyError
+
+_Definition:_ KeyError is raised when trying to access a dictionary with a key that does not exist.
+_Example:_
+
+```python
+my_dict = {'a': 1, 'b': 2}
+print(my_dict['c'])  # Raises KeyError
+```
+
+### 10. TypeError
+
+_Definition:_ TypeError is raised when an operation or function is applied to an object of inappropriate type.
+_Example:_
+
+```python
+print('Hello' + 5)  # Raises TypeError
+
+```
+
+### 11. ValueError
+
+_Definition:_ ValueError is raised when a built-in operation or function receives an argument that has the right type but an inappropriate value.
+_Example:_
+
+```python
+int("abc")  # Raises ValueError
+```
