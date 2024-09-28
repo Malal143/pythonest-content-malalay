@@ -864,6 +864,7 @@ C) None
 D) Error
 
 Answer: A
+```
 
 Q15: Which data structure allows duplicate elements?
 
@@ -876,4 +877,104 @@ C) List
 D) All of the above
 
 Answer: C
+
+## PCEP-30-02 4.4 – Basics of Python Exception Handling
+
+Certainly! Let's delve into the basics of Python exception handling, focusing on the concepts you've mentioned: `try-except` blocks, ordering `except` branches, propagating exceptions through function boundaries, and delegating responsibility for handling exceptions.
+
+### 1. **try-except / the try-except Exception**
+
+In Python, exceptions are errors that occur during program execution. The `try-except` construct is used to handle these exceptions gracefully without crashing the program. Here's how it works:
+
+#### Basic Structure
+
+```python
+try:
+    # Code that may raise an exception
+    risky_operation()
+except SomeSpecificException:
+    # Code to handle the exception
+    handle_exception()
 ```
+
+- **try block**: This is where you write code that might raise an exception. If an exception occurs, the control is transferred to the `except` block.
+- **except block**: This block defines how to handle the exception. You can specify a particular exception type to catch.
+
+#### Example:
+
+```python
+try:
+    num = int(input("Enter a number: "))
+    result = 10 / num
+except ValueError:
+    print("That's not a valid number!")
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+```
+
+In this example, if the user inputs something that isn't an integer, a `ValueError` will be raised. If the user inputs `0`, a `ZeroDivisionError` will occur.
+
+### 2. **Ordering the except branches**
+
+The order of `except` blocks matters. Python checks the `except` blocks in the order they are defined. The first matching exception type will be handled, and the subsequent blocks will be ignored.
+
+#### Example
+
+```python
+try:
+    # Code that may raise exceptions
+    risky_code()
+except (ValueError, Exception):
+    print("Caught a ValueError or a general Exception.")
+except Exception:
+    print("Caught a general Exception.")
+```
+
+In this case, if a `ValueError` occurs, it will match the first `except` block, and the second block will not be executed. Thus, specific exceptions should be listed before more general exceptions.
+
+### 3. **Propagating exceptions through function boundaries**
+
+Exceptions can propagate up through function calls. If an exception is raised in a function and not handled within that function, it will propagate to the caller. This means that if a function does not handle an exception, it can be caught in the calling function.
+
+#### example
+
+```python
+def divide(a, b):
+    return a / b
+
+def main():
+    try:
+        result = divide(10, 0)
+    except ZeroDivisionError:
+        print("Caught a division by zero!")
+
+main()
+```
+
+In this example, the `divide` function raises a `ZeroDivisionError` when trying to divide by zero. Since this exception is not handled within `divide`, it propagates to the `main` function, where it is caught.
+
+### 4. **Delegating responsibility for handling exceptions**
+
+Sometimes, it makes sense to delegate the responsibility for handling exceptions to another part of the program. This can be done by re-raising exceptions or by letting them propagate up the call stack.
+
+#### Example of re-raising an exception:
+
+```python
+def process_data(data):
+    try:
+        # Code that may raise an exception
+        result = data["key"]
+    except KeyError as e:
+        print("KeyError occurred, re-raising...")
+        raise  # Re-raises the caught exception
+
+def main():
+    try:
+        process_data({"other_key": "value"})
+    except KeyError:
+        print("Caught KeyError in main!")
+
+main()
+```
+
+In this example, `process_data` catches a `KeyError` and then re-raises it. The `main` function then catches the re-raised exception and can handle it accordingly.
