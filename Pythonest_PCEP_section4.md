@@ -880,8 +880,6 @@ Answer: C
 
 ## PCEP-30-02 4.4 – Basics of Python Exception Handling
 
-Certainly! Let's delve into the basics of Python exception handling, focusing on the concepts you've mentioned: `try-except` blocks, ordering `except` branches, propagating exceptions through function boundaries, and delegating responsibility for handling exceptions.
-
 ### 1. **try-except / the try-except Exception**
 
 In Python, exceptions are errors that occur during program execution. The `try-except` construct is used to handle these exceptions gracefully without crashing the program. Here's how it works:
@@ -978,3 +976,112 @@ main()
 ```
 
 In this example, `process_data` catches a `KeyError` and then re-raises it. The `main` function then catches the re-raised exception and can handle it accordingly.
+
+### Questions with Answers
+
+1. What will be the output of the following code?
+
+```python
+def func(x):
+    return x + 1
+
+result = func(5)
+print(result)
+```
+
+A) 5  
+B) 6  
+C) None  
+D) Error  
+**Answer:** B
+
+2.Which of the following is a mutable data type in Python?
+
+A) Tuple  
+B) List  
+C) String  
+D) Frozenset  
+**Answer:** B
+
+3.What is the time complexity of accessing an element in a list by index?
+
+A) O(1)  
+B) O(n)  
+C) O(log n)  
+D) O(n^2)  
+**Answer:** A
+
+4.Which of the following statements is true about Python decorators?
+
+A) They modify the behavior of a function or method.  
+B) They can only be applied to classes.  
+C) They must return a string.  
+D) They cannot take arguments.  
+**Answer:** A
+5.What will the following code output?
+
+```python
+print(type([]) is list)
+```
+
+A) True  
+B) False  
+C) None  
+D) Error  
+**Answer:** A
+
+6.Which exception is raised when trying to access an index that is out of range in a list?
+
+A) KeyError  
+B) IndexError  
+C) ValueError  
+D) TypeError  
+**Answer:** B
+
+7. What is the output of the following code?
+
+```python
+x = {1, 2, 3}
+x.add(2)
+print(len(x))
+```
+
+A) 2  
+B) 3  
+C) 4  
+D) Error  
+**Answer:** B
+
+9.What is the primary purpose of the `self` keyword in Python class methods?
+
+A) To refer to the class itself  
+B) To refer to the instance of the class  
+C) To define a static method  
+D) To create a class variable  
+**Answer:** B
+
+10.Which of the following sorting algorithms has the best average-case time complexity?
+
+A) Bubble Sort  
+B) Insertion Sort  
+C) Merge Sort  
+D) Selection Sort  
+**Answer:** C
+
+10.What will the following code output?
+
+```python
+def f(x, y=[]):
+    y.append(x)
+    return y
+
+print(f(1))
+print(f(2, []))
+print(f(3))
+```
+
+A) [1], [2], [3]  
+B) [1], [2], [1, 3]  
+C) [1], [2], [1, 2, 3]  
+D) [1], [2], [2, 3]  
+**Answer:** B
