@@ -1472,8 +1472,11 @@ print(" ".join(words)) # Output: Python is awesome
 Q1: Which of the following is a valid way to create a string in Python?
 
 `A) str = "Hello"`
+
 `B) str = 'Hello'`
+
 `C) str = '''Hello'''`
+
 D) All of the above
 
 Answer: D
@@ -1484,8 +1487,11 @@ Q2: What will be the output of the following code?
 s = "Hello" + " World"
 print(s)
 A) HelloWorld
+
 B) Hello World
+
 C) Hello + World
+
 D) Hello, World
 
 Answer: B
@@ -1497,8 +1503,11 @@ Answer: B
 Q3: What will s[1] return if s = "Python"?
 
 A) P
+
 B) y
+
 C) o
+
 D) n
 
 Answer: B
@@ -1545,8 +1554,11 @@ Answer: A
 Q7: How can you include a single quote in a string that is defined with single quotes?
 
 A) s = 'It\'s a nice day'
+
 B) s = 'It’s a nice day'
+
 C) s = "It's a nice day"
+
 D) Both A and C
 
 Answer: D
@@ -1595,8 +1607,11 @@ Answer: C
 Q11: What does the method s.lower() do?
 
 A) Converts all characters in string s to uppercase
+
 B) Converts all characters in string s to lowercase
+
 C) Returns the original string
+
 D) None of the above
 
 Answer: B
