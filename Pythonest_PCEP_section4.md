@@ -328,13 +328,13 @@ def display_info(name, age):
 print(f"{name} is {age} years old.")
 
 display_info(age=30, name="Bob") # Order doesn't matter
+```
 
 **Mixed Argument Passing**
 You can combine positional and keyword arguments, but positional arguments must come first.
 
 **Example:**
 
-```python
 def info(name, age, country="USA"):
 print(f"{name} is {age} years old and lives in {country}.")
 
